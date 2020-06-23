@@ -12,7 +12,7 @@ $(function () {
     autoAdjustHeight: false,
   });
 
-  $('#catalog__tabs').smartTab("goToTab", 0);
+  // $('#catalog__tabs').smartTab("goToTab", 0);
 
   $('.header__slider').slick({
     infinite: true,
