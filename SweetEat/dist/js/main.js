@@ -369,55 +369,33 @@ $(function () {
   });
 
   function checkWindowWidth() {
-    let readmoreH = 700;
-    if ($(window).width() > 1552) {
-      readmoreH = 700
-    }
-    if ($(window).width() <= 1480) {
-      // readmoreH = 0.75 * $(window).height();
-      readmoreH = 640
-    }
-    if ($(window).width() <= 1349) {
-      readmoreH = 600
-    }
-    if ($(window).width() <= 1183) {
-      readmoreH = 500
-    }
-    if ($(window).width() <= 1050) {
-      readmoreH = 450
-    }
-    if ($(window).width() <= 983) {
-      readmoreH = 420
-    }
-    if ($(window).width() <= 860) {
-      readmoreH = 370
-    }
-    if ($(window).width() <= 780) {
-      readmoreH = 300
-    }
-    if ($(window).width() <= 375) {
-      readmoreH = 600
-    }
-    
-    $('.discount__inner').readmore({
-      speed: 100,
-      collapsedHeight: readmoreH,
-      moreLink: $('.discount__readmore'),
-      lessLink: $('.discount__readmore'),
+    let readmoreH = $('.discount__box').height();
+    let readmoreM = document.querySelector('.discount__inner').scrollHeight;
+    console.log(readmoreM);
+    $('.discount__inner').css({
+      maxHeight: readmoreH + 20
+    });
+
+    $('.discount__readmore').on('click', function () {
+      $(this).toggleClass('is-active');
+      if ($(this).hasClass('is-active')) {
+        $('.discount__inner').css({
+          maxHeight: readmoreM
+        });
+      }
+      else {
+        $('.discount__inner').css({
+          maxHeight: readmoreH + 20
+        })
+        $('html, body').animate({
+          scrollTop: $('.discount__inner').offset().top - 120
+        }, 400);
+      }
     });
   }
   checkWindowWidth();
   
   $(window).resize(checkWindowWidth);
-
-  $('.discount__readmore').on('click', function () {
-    $(this).toggleClass('is-active');
-    if (!$(this).hasClass('is-active')) {
-      $('html, body').animate({
-        scrollTop: $('.discount__inner').offset().top - 120
-      }, 300);
-    }
-  });
 
   $('.form__type').on('click', function () {
     $(this).toggleClass('is-active');
