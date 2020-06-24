@@ -396,7 +396,7 @@ $(function () {
   }
   checkWindowWidth();
   
-  $(window).resize(checkWindowWidth);
+  $('body').resize(checkWindowWidth);
 
   $('.form__type').on('click', function () {
     $(this).toggleClass('is-active');
