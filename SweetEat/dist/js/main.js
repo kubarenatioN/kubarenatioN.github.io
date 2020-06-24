@@ -368,29 +368,30 @@ $(function () {
     }, disIndx);
   });
 
+  let readmoreH, readmoreM;
+  $('.discount__readmore').on('click', function () {
+    $(this).toggleClass('is-active');
+    if ($(this).hasClass('is-active')) {
+      $('.discount__inner').css({
+        maxHeight: readmoreM
+      });
+    }
+    else {
+      $('.discount__inner').css({
+        maxHeight: readmoreH + 20
+      })
+      $('html, body').animate({
+        scrollTop: $('.discount__inner').offset().top - 120
+      }, 400);
+    }
+  });
+  
   function checkWindowWidth() {
-    let readmoreH = $('.discount__box').height();
-    let readmoreM = document.querySelector('.discount__inner').scrollHeight;
+    readmoreH = $('.discount__box').height();
+    readmoreM = document.querySelector('.discount__inner').scrollHeight;
     console.log(readmoreM);
     $('.discount__inner').css({
       maxHeight: readmoreH + 20
-    });
-
-    $('.discount__readmore').on('click', function () {
-      $(this).toggleClass('is-active');
-      if ($(this).hasClass('is-active')) {
-        $('.discount__inner').css({
-          maxHeight: readmoreM
-        });
-      }
-      else {
-        $('.discount__inner').css({
-          maxHeight: readmoreH + 20
-        })
-        $('html, body').animate({
-          scrollTop: $('.discount__inner').offset().top - 120
-        }, 400);
-      }
     });
   }
   checkWindowWidth();
