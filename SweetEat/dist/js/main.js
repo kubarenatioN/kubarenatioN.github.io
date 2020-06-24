@@ -12,7 +12,7 @@ $(function () {
     autoAdjustHeight: false,
   });
 
-  // $('#catalog__tabs').smartTab("goToTab", 0);
+  $('#catalog__tabs').smartTab("goToTab", 0);
 
   $('.header__slider').slick({
     infinite: true,
@@ -30,10 +30,13 @@ $(function () {
       {
         breakpoint: 1600,
         settings: {
-          speed: 500
+          speed: 500,
         }
       }
     ]
+  });
+  $('.header__slider').on('touchstart', e => {
+    $('.header__slider').slick('slickPlay');
   });
 
   $('.header__cakesnames-slider').slick({
@@ -426,9 +429,9 @@ $(function () {
   let scrolldir;
   let mainH = $('#main').innerHeight();
   let menu = $('.header__menu');
-  let menuH = $('.header__menu').height();
 
   function checkScroll() {
+    let menuH = $('.header__menu').height();
     scrolldir = document.querySelector('html').getAttribute('data-scrolldir');
     let scroll = $(window).scrollTop();
     if (scroll > mainH + menu.innerHeight()) {
