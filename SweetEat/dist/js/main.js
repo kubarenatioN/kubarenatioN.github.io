@@ -1,10 +1,6 @@
 $(function () {
 
   $('#catalog__tabs').smartTab({
-    transition: {
-      animation: 'fade',
-      speed: 200,
-    },
     keyboardSettings: {
       keyNavigation: false,
     },
@@ -115,35 +111,37 @@ $(function () {
     ]
   });
 
+  $("#catalog__tabs").on("showTab", function (e, anchorObject, tabIndex) {
+    // alert("You are on tab " + tabIndex + " now");
+    // alert("You are on tab " + anchorObject.attr('href') );
+    $(anchorObject.attr('href')).find('.catalog__slider').slick('setPosition')
+  });
+
   $('.hamburger').on('click', function() {
     $(this).toggleClass('is-active');
     $('.header__nav').slideToggle(200);
   })
 
-  $('.nav-link').on('click', function () {
-    // setTimeout(() => {
-      // $($(this).attr('href')).find('.catalog__slider').slick('refresh');
-      // $('.catalog__slider-tab').last().find('.catalog__slider').slick('refresh');
-    //   $('.catalog__slider').slick('refresh');
-    // }, 200);
-    setTimeout(() => {
-      $($(this).attr('href')).find('.catalog__slider').slick('refresh');
-      $('.catalog__slider-tab').last().find('.catalog__slider').slick('refresh');
-    }, 200);
-  });
+  // $('.nav-link').on('click', function () {
+   
+  //   setTimeout(() => {
+  //     $($(this).attr('href')).find('.catalog__slider').slick('setPosition');
+  //     $('.catalog__slider-tab').last().find('.catalog__slider').slick('setPosition');
+  //   }, 500);
+  // });
 
-  $('#catalog-tab1').find('.catalog__slider').slick('refresh');
-  $('.catalog__dots').eq(0).addClass('is-active');
+  // $('#catalog-tab1').find('.catalog__slider').slick('setPosition');
+  // $('.catalog__dots').eq(0).addClass('is-active');
 
-  function checkTab() {
-    setTimeout(() => {
-      let tabIndex = $('.nav-link.catalog__nav-tab-inner.active').index('.nav-link.catalog__nav-tab-inner');
-      $('.catalog__dots').removeClass('is-active');
-      $('.catalog__dots').eq(tabIndex).addClass('is-active');
-    }, 200);
-  }
+  // function checkTab() {
+  //   setTimeout(() => {
+  //     let tabIndex = $('.nav-link.catalog__nav-tab-inner.active').index('.nav-link.catalog__nav-tab-inner');
+  //     $('.catalog__dots').removeClass('is-active');
+  //     $('.catalog__dots').eq(tabIndex).addClass('is-active');
+  //   }, 200);
+  // }
 
-  $('.nav-link.catalog__nav-tab-inner').on('click', checkTab);
+  // $('.nav-link.catalog__nav-tab-inner').on('click', checkTab);
   $('.nav-link.catalog__nav-tab-inner').on('click', refreshPopup);
 
 
