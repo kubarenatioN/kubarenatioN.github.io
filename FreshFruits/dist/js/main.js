@@ -113,7 +113,7 @@ $(function() {
     heightMargin: 0,
     moreLink: '<div class="showmore-btn-wrapper"><a href="#" class="showmore-btn">Показать больше</a></div>',
     lessLink: '<div class="showmore-btn-wrapper"><a href="#" class="showmore-btn">Показать больше</a></div>',
-    collapsedHeight: productItemHeight,
+    collapsedHeight: productItemHeight + 40,
     beforeToggle: function (trigger, element, expanded) {
       if (expanded) { // The "Close" link was clicked 
         $('html, body').animate({
