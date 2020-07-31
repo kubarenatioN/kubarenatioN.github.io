@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400,700&family=Raleway&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__wrapper" style="background-image: url(images/header-bg-compose.webp);">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__top">
+            <button class="header__menu-btn hamburger hamburger--vortex" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <a class="logo" href="#">
+              <picture>
+                <source srcset="images/logo-small.svg" media="(max-width: 480px)">
+                <img class="logo__img" src="images/logo.svg" alt="Logo">
+              </picture>
+            </a>
+            <nav class="menu header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Экзотические фрукты
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Премиумные фрукты
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Премиумные овощи
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Каталог
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="user">
+              <a class="user__profile" href="#">
+                <img class="user__profile-img" src="images/user.svg" alt="user">
+              </a>
+              <a class="user__cart" href="#">
+                <img class="user__profile-img" src="images/shopping-bags.svg" alt="cart">
+                <span class="cart__products">
+                  17
+                </span>
+              </a>
+            </div>
+
+          </div>
+          <div class="header__content">
+            <h1 class="header__title">
+              Fresh Fruits
+            </h1>
+            <p class="header__descr">
+              Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+            </p>
+            <button class="header__btn btn">
+              Наша продукция
+            </button>
+            <a class="header__scroll" href="#whywe">
+              <img src="images/mouse.svg" alt="Mouse">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="whywe" class="whywe">
+    <div class="container">
+      <div class="whywe__inner">
+        <h4 class="whywe__title">
+          Почему именно мы?
+        </h4>
+        <div class="whywe__item">
+          <h6 class="whywe__item-title">
+            Доставка фруктов
+          </h6>
+          <p class="whywe__item-descr">
+            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Все заманивший на
+            берегу вершину щеке букв себя предупреждал обеспечивает пояс запятой. Своего щеке силуэт, заглавных которое
+            большого ее дорогу что.
+          </p>
+        </div>
+        <div class="whywe__item">
+          <h6 class="whywe__item-title">
+            Высокое качество
+          </h6>
+          <p class="whywe__item-descr">
+            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Все заманивший на
+            берегу вершину
+            щеке букв себя предупреждал обеспечивает пояс запятой. Своего щеке силуэт, заглавных которое большого ее
+            дорогу что.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="best">
+    <div class="best__wrapper">
+      <div class="container">
+        <div class="best__inner">
+          <h5 class="best__title section-title">
+            Бестселлеры
+          </h5>
+          <div class="best__slider">
+            <div class="best__item product-item product-item--top">
+              <img class="product-item__img" src="images/pitaya.webp" alt="Pitaya">
+              <h6 class="product-item__title">
+                Питая Дракон
+              </h6>
+              <div class="product-item__price">
+                <span class="product-item__price--bold">92 </span>руб./1 кг
+              </div>
+              <div class="product-item__buttons">
+                <div class="product-item__counter-box">
+                  <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+                </div>
+                <div class="product-item__add">
+                  <button class="product-item__add-btn btn" type="submit">
+                    Добавить в корзину
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="best__item product-item">
+              <img class="product-item__img" src="images/guava.webp" alt="Guava">
+              <h6 class="product-item__title">
+                Гуава Перу
+              </h6>
+              <div class="product-item__price">
+                <span class="product-item__price--bold">56 </span>руб./1 кг
+              </div>
+              <div class="product-item__buttons">
+                <div class="product-item__counter-box">
+                  <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+                </div>
+                <div class="product-item__add">
+                  <button class="product-item__add-btn btn" type="submit">
+                    Добавить в корзину
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="best__item product-item product-item--top">
+              <img class="product-item__img" src="images/grenade.webp" alt="Pomegranade">
+              <h6 class="product-item__title">
+                Гранат Рубин
+              </h6>
+              <div class="product-item__price">
+                <span class="product-item__price--bold">69 </span>руб./1 кг
+              </div>
+              <div class="product-item__buttons">
+                <div class="product-item__counter-box">
+                  <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+                </div>
+                <div class="product-item__add">
+                  <button class="product-item__add-btn btn" type="submit">
+                    Добавить в корзину
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="best__item product-item">
+              <img class="product-item__img" src="images/guava.webp" alt="Guava">
+              <h6 class="product-item__title">
+                Гуава Перу
+              </h6>
+              <div class="product-item__price">
+                <span class="product-item__price--bold">92 </span>руб./1 кг
+              </div>
+              <div class="product-item__buttons">
+                <div class="product-item__counter-box">
+                  <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+                </div>
+                <div class="product-item__add">
+                  <button class="product-item__add-btn btn" type="submit">
+                    Добавить в корзину
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="best__item product-item">
+              <img class="product-item__img" src="images/guava.webp" alt="Guava">
+              <h6 class="product-item__title">
+                Гуава Перу
+              </h6>
+              <div class="product-item__price">
+                <span class="product-item__price--bold">92 </span>руб./1 кг
+              </div>
+              <div class="product-item__buttons">
+                <div class="product-item__counter-box">
+                  <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+                </div>
+                <div class="product-item__add">
+                  <button class="product-item__add-btn btn" type="submit">
+                    Добавить в корзину
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="subscribe">
+    <div class="container">
+      <div class="subscribe__inner">
+        <h6 class="subscribe__title">
+          Подпишитесь на нашу рассылку
+        </h6>
+        <form class="subscribe__form">
+          <input class="subscribe__input" type="email" placeholder="Ваш E-mail">
+          <button class="subscribe__btn btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner">
+    <picture>
+      <source srcset="images/banner-bonus-small.webp" media="(max-width: 768px)">
+      <source srcset="images/banner-bonus-middle.webp" media="(max-width: 1366px)">
+      <img src="images/banner-bonus-large.webp" alt="Bonus">
+    </picture>
+  </div>
+
+  <section class="production">
+    <div class="container">
+      <div id="production__inner" class="production__inner">
+        <h5 class="section-title production__title">
+          Наша продукция
+        </h5>
+        <div class="production__catalog">
+          
+          <div class="production__item product-item">
+            <img class="product-item__img" src="images/raspberry.webp" alt="Малина">
+            <h6 class="product-item__title">
+              Малина Ранняя
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">59 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item product-item--top">
+            <img class="product-item__img" src="images/grapes.webp" alt="Виноград">
+            <h6 class="product-item__title">
+              Виноград Синий
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">42 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item">
+            <img class="product-item__img" src="images/durian.webp" alt="Дуриан">
+            <h6 class="product-item__title">
+              Дуриан Индийский
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">72 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item">
+            <img class="product-item__img" src="images/lime.webp" alt="Лайм">
+            <h6 class="product-item__title">
+              Лайм Экзотический
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">63 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item">
+            <img class="product-item__img" src="images/passion.webp" alt="Маракуйя">
+            <h6 class="product-item__title">
+              Маракуйя Страстная
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">79 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item">
+            <img class="product-item__img" src="images/strawberry.webp" alt="Клубника">
+            <h6 class="product-item__title">
+              Клубника Восточная
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">63 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item">
+            <img class="product-item__img" src="images/raspberry.webp" alt="Малина">
+            <h6 class="product-item__title">
+              Малина Ранняя
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">59 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item product-item--top">
+            <img class="product-item__img" src="images/grapes.webp" alt="Виноград">
+            <h6 class="product-item__title">
+              Виноград Синий
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">42 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item">
+            <img class="product-item__img" src="images/durian.webp" alt="Дуриан">
+            <h6 class="product-item__title">
+              Дуриан Индийский
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">72 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item">
+            <img class="product-item__img" src="images/lime.webp" alt="Лайм">
+            <h6 class="product-item__title">
+              Лайм Экзотический
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">63 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item">
+            <img class="product-item__img" src="images/passion.webp" alt="Маракуйя">
+            <h6 class="product-item__title">
+              Маракуйя Страстная
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">79 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="production__item product-item">
+            <img class="product-item__img" src="images/strawberry.webp" alt="Клубника">
+            <h6 class="product-item__title">
+              Клубника Восточная
+            </h6>
+            <div class="product-item__price">
+              <span class="product-item__price--bold">63 </span>руб./1 кг
+            </div>
+            <div class="product-item__buttons">
+              <div class="product-item__counter-box">
+                <input class="product-item__counter-input form-styler" type="number" min="1" max="100" value="1">
+              </div>
+              <div class="product-item__add">
+                <button class="product-item__add-btn btn" type="submit">
+                  Добавить в корзину
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="production__btn btn">
+          Перейти в каталог
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="weekly">
+    <div class="weekly__wrapper">
+      <div class="container">
+        <div class="weekly__inner">
+          <h4 class="weekly__title">
+            Доставка недели
+          </h4>
+          <div class="weekly__card weekly__card--bonus">
+            <div class="weekly__card-image">
+              <img class="card-img" src="images/set.webp" alt="Набор">
+            </div>
+            <div class="weekly__card-info">
+              <h6 class="weekly__card-title">
+                Что включено?
+              </h6>
+              <p class="weekly__card-subtitle">
+                Недельная доставка каждую субботу
+              </p>
+              <ul class="weekly__card-list">
+                <li class="weekly__card-item">Ананас</li>
+                <li class="weekly__card-item">Манго</li>
+                <li class="weekly__card-item">Виноград</li>
+                <li class="weekly__card-item">Бананы</li>
+                <li class="weekly__card-item">Персики</li>
+                <li class="weekly__card-item">Кокос</li>
+                <li class="weekly__card-item">Авокадо</li>
+                <li class="weekly__card-item">Яблоки</li>
+                <li class="weekly__card-item">Лимоны</li>
+              </ul>
+              <div class="weekly__card-price product-item__price">
+                <span class="product-item__price--bold">56 </span>руб./1 кг
+              </div>
+              <button class="product-item__add-btn weekly__card-btn btn" type="submit">
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="blog">
+    <div class="blog__inner">
+      <h5 class="blog__title section-title">
+        Наш блог
+      </h5>
+      <div class="blog__slider-wrapper">
+        <div class="blog__slider">
+
+          <div class="blog__slide-wrapper">
+            <div class="blog__slider-item">
+              <div class="blog__item-image">
+                <img class="blog__img" src="images/blog-1.webp" alt="Блог 1">
+                <span class="blog__item-date">28.07.2020</span>
+              </div>
+              <div class="blog__item-title">
+                Как мы выбираем фрукты
+              </div>
+              <p class="blog__item-descr">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Инициал рекламных
+                сбить, возвращайся рукопись собрал щеке подпоясал своих, жаренные несколько языкового о вершину.
+                Встретил
+                составитель повстречался запятой однажды страну!
+              </p>
+              <div class="blog__item-bottom">
+                <button class="blog__item-btn btn">
+                  Подробнее
+                </button>
+                <div class="blog__item-share">
+                  <span>Share</span>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/facebook-grey.svg" alt="Facebook" class="blog__share-img">
+                  </a>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/instagram-grey.svg" alt="Instagram" class="blog__share-img">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="blog__slide-wrapper">
+            <div class="blog__slider-item">
+              <div class="blog__item-image">
+                <img class="blog__img" src="images/blog-2.webp" alt="Блог 2">
+                <span class="blog__item-date">27.07.2020</span>
+              </div>
+              <div class="blog__item-title">
+                Как мы выбираем фрукты
+              </div>
+              <p class="blog__item-descr">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Инициал рекламных
+                сбить, возвращайся рукопись собрал щеке подпоясал своих, жаренные несколько языкового о вершину.
+                Встретил
+                составитель повстречался запятой однажды страну!
+              </p>
+              <div class="blog__item-bottom">
+                <button class="blog__item-btn btn">
+                  Подробнее
+                </button>
+                <div class="blog__item-share">
+                  <span>Share</span>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/facebook-grey.svg" alt="Facebook" class="blog__share-img">
+                  </a>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/instagram-grey.svg" alt="Instagram" class="blog__share-img">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__slide-wrapper">
+            <div class="blog__slider-item">
+              <div class="blog__item-image">
+                <img class="blog__img" src="images/blog-3.webp" alt="Блог 3">
+                <span class="blog__item-date">26.07.2020</span>
+              </div>
+              <div class="blog__item-title">
+                Как мы выбираем фрукты
+              </div>
+              <p class="blog__item-descr">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Инициал рекламных
+                сбить, возвращайся рукопись собрал щеке подпоясал своих, жаренные несколько языкового о вершину.
+                Встретил
+                составитель повстречался запятой однажды страну!
+              </p>
+              <div class="blog__item-bottom">
+                <button class="blog__item-btn btn">
+                  Подробнее
+                </button>
+                <div class="blog__item-share">
+                  <span>Share</span>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/facebook-grey.svg" alt="Facebook" class="blog__share-img">
+                  </a>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/instagram-grey.svg" alt="Instagram" class="blog__share-img">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__slide-wrapper">
+            <div class="blog__slider-item">
+              <div class="blog__item-image">
+                <img class="blog__img" src="images/blog-4.webp" alt="Блог 4">
+                <span class="blog__item-date">25.07.2020</span>
+              </div>
+              <div class="blog__item-title">
+                Как мы выбираем фрукты
+              </div>
+              <p class="blog__item-descr">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Инициал рекламных
+                сбить, возвращайся рукопись собрал щеке подпоясал своих, жаренные несколько языкового о вершину.
+                Встретил
+                составитель повстречался запятой однажды страну!
+              </p>
+              <div class="blog__item-bottom">
+                <button class="blog__item-btn btn">
+                  Подробнее
+                </button>
+                <div class="blog__item-share">
+                  <span>Share</span>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/facebook-grey.svg" alt="Facebook" class="blog__share-img">
+                  </a>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/instagram-grey.svg" alt="Instagram" class="blog__share-img">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__slide-wrapper">
+            <div class="blog__slider-item">
+              <div class="blog__item-image">
+                <img class="blog__img" src="images/blog-1.webp" alt="Блог 5">
+                <span class="blog__item-date">23.07.2020</span>
+              </div>
+              <div class="blog__item-title">
+                Как мы выбираем фрукты
+              </div>
+              <p class="blog__item-descr">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Инициал рекламных
+                сбить, возвращайся рукопись собрал щеке подпоясал своих, жаренные несколько языкового о вершину.
+                Встретил
+                составитель повстречался запятой однажды страну!
+              </p>
+              <div class="blog__item-bottom">
+                <button class="blog__item-btn btn">
+                  Подробнее
+                </button>
+                <div class="blog__item-share">
+                  <span>Share</span>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/facebook-grey.svg" alt="Facebook" class="blog__share-img">
+                  </a>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/instagram-grey.svg" alt="Instagram" class="blog__share-img">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__slide-wrapper">
+            <div class="blog__slider-item">
+              <div class="blog__item-image">
+                <img class="blog__img" src="images/blog-3.webp" alt="Блог 6">
+                <span class="blog__item-date">21.07.2020</span>
+              </div>
+              <div class="blog__item-title">
+                Как мы выбираем фрукты
+              </div>
+              <p class="blog__item-descr">
+                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Инициал рекламных
+                сбить, возвращайся рукопись собрал щеке подпоясал своих, жаренные несколько языкового о вершину.
+                Встретил
+                составитель повстречался запятой однажды страну!
+              </p>
+              <div class="blog__item-bottom">
+                <button class="blog__item-btn btn">
+                  Подробнее
+                </button>
+                <div class="blog__item-share">
+                  <span>Share</span>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/facebook-grey.svg" alt="Facebook" class="blog__share-img">
+                  </a>
+                  <a class="blog__share-link" href="#">
+                    <img src="images/instagram-grey.svg" alt="Instagram" class="blog__share-img">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="reviews__wrapper">
+      <div class="container">
+        <div class="reviews__inner">
+          <h4 class="reviews__title">
+            Отзывы покупателей
+          </h4>
+          <div class="reviews__slider">
+
+            <div class="reviews__slider-item">
+              <div class="reviews__item-author">
+                <img src="images/review-3.webp" alt="" class="reviews__author-img">
+                <p class="reviews__author-name">Виктория Юрьевна</p>
+                <p class="reviews__author-position">Фитнес-тренер</p>
+              </div>
+              <p class="reviews__item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                рыбные тексты. Текстами рот над
+                имени
+                взгляд она однажды, точках сбить lorem пустился жизни снова эта запятых ручеек страну себя заманивший
+                переулка?</p>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item-author">
+                <img src="images/review-1.webp" alt="" class="reviews__author-img">
+                <p class="reviews__author-name">Александр Петров</p>
+                <p class="reviews__author-position">Менеджер</p>
+              </div>
+              <p class="reviews__item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                рыбные тексты. Текстами рот над
+                имени
+                взгляд она однажды, точках сбить lorem пустился жизни снова эта запятых ручеек страну себя заманивший
+                переулка?</p>
+            </div>
+
+            <div class="reviews__slider-item">
+              <div class="reviews__item-author">
+                <img src="images/review-2.webp" alt="" class="reviews__author-img">
+                <p class="reviews__author-name">Евгения Пономаренко</p>
+                <p class="reviews__author-position">Бухгалтер</p>
+              </div>
+              <p class="reviews__item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                рыбные тексты.
+                Текстами рот над
+                имени
+                взгляд она однажды, точках сбить lorem пустился жизни снова эта запятых ручеек страну себя заманивший
+                переулка?</p>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item-author">
+                <img src="images/review-3.webp" alt="" class="reviews__author-img">
+                <p class="reviews__author-name">София Овсянникова</p>
+                <p class="reviews__author-position">Учитель</p>
+              </div>
+              <p class="reviews__item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                рыбные тексты.
+                Текстами рот над
+                имени
+                взгляд она однажды, точках сбить lorem пустился жизни снова эта запятых ручеек страну себя заманивший
+                переулка?</p>
+            </div>
+
+            <div class="reviews__slider-item">
+              <div class="reviews__item-author">
+                <img src="images/review-3.webp" alt="" class="reviews__author-img">
+                <p class="reviews__author-name">София Овсянникова</p>
+                <p class="reviews__author-position">Учитель</p>
+              </div>
+              <p class="reviews__item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                рыбные тексты.
+                Текстами рот над
+                имени
+                взгляд она однажды, точках сбить lorem пустился жизни снова эта запятых ручеек страну себя заманивший
+                переулка?</p>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item-author">
+                <img src="images/review-3.webp" alt="" class="reviews__author-img">
+                <p class="reviews__author-name">София Овсянникова</p>
+                <p class="reviews__author-position">Учитель</p>
+              </div>
+              <p class="reviews__item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                рыбные тексты.
+                Текстами рот над
+                имени
+                взгляд она однажды, точках сбить lorem пустился жизни снова эта запятых ручеек страну себя заманивший
+                переулка?</p>
+            </div>
+
+            <div class="reviews__slider-item">
+              <div class="reviews__item-author">
+                <img src="images/review-3.webp" alt="" class="reviews__author-img">
+                <p class="reviews__author-name">София Овсянникова</p>
+                <p class="reviews__author-position">Учитель</p>
+              </div>
+              <p class="reviews__item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                рыбные тексты.
+                Текстами рот над
+                имени
+                взгляд она однажды, точках сбить lorem пустился жизни снова эта запятых ручеек страну себя заманивший
+                переулка?</p>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__item-author">
+                <img src="images/review-3.webp" alt="" class="reviews__author-img">
+                <p class="reviews__author-name">София Овсянникова</p>
+                <p class="reviews__author-position">Учитель</p>
+              </div>
+              <p class="reviews__item-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
+                рыбные тексты.
+                Текстами рот над
+                имени
+                взгляд она однажды, точках сбить lorem пустился жизни снова эта запятых ручеек страну себя заманивший
+                переулка?</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="logo" href="#">
+            <picture>
+              <source srcset="images/logo-small.svg" media="(max-width: 480px)">
+              <img class="logo__img" src="images/logo.svg" alt="Logo">
+            </picture>
+          </a>
+          <nav class="menu menu--footer">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Экзотические фрукты
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Премиумные фрукты
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Премиумные овощи
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Каталог
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="socials">
+            <a class="socials__link" href="#">
+              <img class="socials__img" src="images/facebook-grey.svg" alt="Facebook">
+            </a>
+            <a class="socials__link" href="#">
+              <img class="socials__img" src="images/instagram-grey.svg" alt="Instagram">
+            </a>
+          </div>
+          <div class="developer">
+            developed by
+            <a class="developer__link" href="#" target="_blank">
+              Nikita Kubarko
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
