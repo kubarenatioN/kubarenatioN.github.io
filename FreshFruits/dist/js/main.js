@@ -102,26 +102,25 @@ $(function() {
 
   let productItemHeight
   function checkHeight() {
-    productItemHeight = $('.production__item').outerHeight(true);
-    console.log(productItemHeight)
+    $(window).on('load', function() {
+      productItemHeight = $('.production__item').outerHeight(true);
+      console.log(productItemHeight)
+      $('.production__catalog').readmore({
+        collapsedHeight: productItemHeight + 60 - 20,//60 - padding-top, 20 - avoid shadows from blocks below
+        heightMargin: 0,
+        moreLink: '<div class="showmore-btn-wrapper"><a href="#" class="showmore-btn">Показать больше</a></div>',
+        lessLink: '<div class="showmore-btn-wrapper"><a href="#" class="showmore-btn">Скрыть</a></div>',
+        beforeToggle: function (trigger, element, expanded) {
+          if (expanded) { // The "Close" link was clicked 
+            $('html, body').animate({
+              scrollTop: element.offset().top
+            }, 300)
+          }
+        }
+      })
+    }) 
   }
-  $(window).resize(checkHeight)
-  checkHeight()
-
-  $('.production__catalog').readmore({
-    speed: 0,
-    heightMargin: 0,
-    moreLink: '<div class="showmore-btn-wrapper"><a href="#" class="showmore-btn">Показать больше</a></div>',
-    lessLink: '<div class="showmore-btn-wrapper"><a href="#" class="showmore-btn">Показать больше</a></div>',
-    collapsedHeight: productItemHeight,
-    beforeToggle: function (trigger, element, expanded) {
-      if (expanded) { // The "Close" link was clicked 
-        $('html, body').animate({
-          scrollTop: element.offset().top 
-        }, 300)
-      } 
-    }
-  })
+  // checkHeight()
 
   $('.scrollTo').on('click', function(e) {
     e.preventDefault()
@@ -129,5 +128,9 @@ $(function() {
       scrollTop: $($(this).attr('href')).offset().top
     }, 500)
   })
-
+  // alert($(window).width())
+  if ($(window).width() < 584) {
+    checkHeight()
+  }
+  
 })
