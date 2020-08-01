@@ -41,12 +41,22 @@ $(function() {
         breakpoint: 1401,
         settings: {
           slidesToShow: 2,
+          infinite: false,
+          nextArrow: '<button class="blog__slider-arrow blog__arrow-next"></button>',
+          prevArrow: '<button class="blog__slider-arrow blog__arrow-prev"></button>',
+          dots: true,
+          dotsClass: 'blog__slider-dots',
         }
       },
       {
         breakpoint: 641,
         settings: {
           slidesToShow: 1,
+          infinite: false,
+          nextArrow: '<button class="blog__slider-arrow blog__arrow-next"></button>',
+          prevArrow: '<button class="blog__slider-arrow blog__arrow-prev"></button>',
+          dots: true,
+          dotsClass: 'blog__slider-dots',
         }
       },
       {
