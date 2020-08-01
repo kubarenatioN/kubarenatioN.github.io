@@ -69,41 +69,57 @@ $(function() {
     ]
   })
 
-  $('.reviews__slider').slick({
-    vertical: true,
-    slidesToShow: 2,
-    infinite: false,
-    swipe: false,
-    nextArrow: '<button class="reviews__slider-arrow reviews__arrow-next"></button>',
-    prevArrow: '<button class="reviews__slider-arrow reviews__arrow-prev"></button>',
-    dots: true,
-    dotsClass: 'reviews__slider-dots',
-    slidesPerRow: 2,
-    responsive: [
-      {
-        breakpoint: 1001,
-        settings: {
-          slidesToShow: 1,
-          slidesPerRow: 1,
-          rows: 2,
-          adaptiveHeight: true,
-        }
-      },
-      {
-        breakpoint: 641,
-        settings: {
-          slidesToShow: 1,
-          slidesPerRow: 1,
-          rows: 2,
-          adaptiveHeight: true,
-          swipe: true,
-          verticalSwiping: true,
-          dots: false,
-          arrows: false,
-        }
-      },
-    ]
+  var reviewsSwiper = new Swiper('.swiper-container', {
+    direction: 'vertical',
+    // autoHeight: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 2,
+    // slidesPerColumn: 2,
+    spaceBetween: 30,
   })
+
+  // $('.reviews__slider').slick({
+  //   vertical: true,
+  //   slidesToShow: 2,
+  //   infinite: false,
+  //   swipe: false,
+  //   nextArrow: '<button class="reviews__slider-arrow reviews__arrow-next"></button>',
+  //   prevArrow: '<button class="reviews__slider-arrow reviews__arrow-prev"></button>',
+  //   dots: true,
+  //   dotsClass: 'reviews__slider-dots',
+  //   slidesPerRow: 2,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1001,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesPerRow: 1,
+  //         rows: 2,
+  //         adaptiveHeight: true,
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 641,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesPerRow: 1,
+  //         rows: 2,
+  //         adaptiveHeight: true,
+  //         swipe: true,
+  //         verticalSwiping: true,
+  //         dots: false,
+  //         arrows: false,
+  //       }
+  //     },
+  //   ]
+  // })
 
   $('.header__menu-btn').on('click', function() {
     $(this).toggleClass('is-active')
