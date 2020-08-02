@@ -89,7 +89,6 @@ $(function() {
       320: {
         slidesPerView: 1,
         slidesPerColumn: 0,
-        // direction: 'horizontal',
       },
       769: {
         slidesPerView: 2,
@@ -99,14 +98,6 @@ $(function() {
         slidesPerView: 2,
         slidesPerColumn: 2,
       },
-      // 480: {
-      //   slidesPerView: 3,
-      //   spaceBetween: 30
-      // },
-      // 640: {
-      //   slidesPerView: 4,
-      //   spaceBetween: 40
-      // }
     }
   })
 
@@ -152,8 +143,17 @@ $(function() {
   })
 
   let productItemHeight
-  function checkHeight() {
-    $(window).on('load', function() {
+  // checkHeight()
+
+  $('.scrollTo').on('click', function(e) {
+    e.preventDefault()
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top
+    }, 500)
+  })
+  // alert($(window).width())
+  if ($(window).width() < 601) {
+    $(window).on('load', function () {
       productItemHeight = $('.production__item').outerHeight(true);
       console.log(productItemHeight)
       $('.production__catalog').readmore({
@@ -169,19 +169,7 @@ $(function() {
           }
         }
       })
-    }) 
-  }
-  // checkHeight()
-
-  $('.scrollTo').on('click', function(e) {
-    e.preventDefault()
-    $('html, body').animate({
-      scrollTop: $($(this).attr('href')).offset().top
-    }, 500)
-  })
-  // alert($(window).width())
-  if ($(window).width() < 584) {
-    checkHeight()
+    })
   }
   
 })
