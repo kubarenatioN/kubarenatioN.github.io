@@ -71,18 +71,43 @@ $(function() {
 
   var reviewsSwiper = new Swiper('.swiper-container', {
     direction: 'vertical',
-    // autoHeight: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.reviews__slider-dots',
       clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 2,
+    resistanceRatio: 0.7,
+    // slidesPerView: 2,
     // slidesPerColumn: 2,
-    spaceBetween: 30,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerColumn: 0,
+        // direction: 'horizontal',
+      },
+      769: {
+        slidesPerView: 2,
+        slidesPerColumn: 1,
+      },
+      1001: {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+      },
+      // 480: {
+      //   slidesPerView: 3,
+      //   spaceBetween: 30
+      // },
+      // 640: {
+      //   slidesPerView: 4,
+      //   spaceBetween: 40
+      // }
+    }
   })
 
   // $('.reviews__slider').slick({
