@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rozetka</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <nav class="header__nav">
+          <button class="catalog__btn">
+            Каталог товаров
+          </button>
+          <a class="logo" href="#">
+            <picture>
+              <source type="image/webp" srcset="images/logo-small.svg" media="(max-width: 480px)">
+              <img class="logo-img" src="images/logo-large.svg" alt="Logo">
+            </picture>
+          </a>
+          <div class="nav__items">
+            <form class="header__search-form" action="">
+              <input class="header__search-input" type="text" placeholder="Поиск">
+            </form>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <img class="menu__item-img" src="images/user.svg" alt="Profile">
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <img class="menu__item-img" src="images/heart.svg" alt="Favourite">
+                  <span class="menu__item-number">0</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">
+                  <img class="menu__item-img" src="images/shopping-cart.svg" alt="Cart">
+                  <span class="menu__item-number">0</span>
+                </a>
+              </li>
+              <li class="menu__item">
+                <button class="menu__item-btn lang-btn lang-ru">
+                  RU
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list breadcrumbs__list--product">
+        <li class="breadcrumbs__list-item">
+          <a class="breadcrumbs__home" href="#"></a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <a href="#">Одежда, обувь и аксессуары</a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <a href="#">Обувь</a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <a href="#">Мужская обувь</a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <span>Кроссовки и кеды</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="product-page">
+    <div class="container">
+      <div class="product-page__inner">
+        <div class="product-page__slider">
+          <div class="swiper-container product-page__slider-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="product-page__slider-item">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-page-product-1.webp">
+                    <img class="product-page__slider-image" src="images/content/product-page-product-1.webp" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-page__slider-item">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-page-product-2.webp">
+                    <img class="product-page__slider-image" src="images/content/product-page-product-2.webp" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-page__slider-item">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-page-product-3.webp">
+                    <img class="product-page__slider-image" src="images/content/product-page-product-3.webp" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-page__slider-item">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-page-product-4.webp">
+                    <img class="product-page__slider-image" src="images/content/product-page-product-4.webp" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-page__slider-item">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-page-product-5.webp">
+                    <img class="product-page__slider-image" src="images/content/product-page-product-5.webp" alt="">
+                  </picture>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="product-page__info">
+          <div class="product-page__info-heading">
+            <h3 class="product-page__product-title">
+              Кроссовки Nike Air Jordan 1 Mid Green
+            </h3>
+            <button class="product__item-like"></button>
+          </div>
+          <p class="product-page__isinstock">
+            Есть в наличии
+          </p>
+          <form class="product-page__order-form">
+            <div class="product-page__form-item">
+              <span class="product-page__form-title">
+                Цвет
+              </span>
+              <div class="product-page__form-color">
+                <input class="product-page__color-radio form-styler product-page__color-radio--green checked"
+                  type="radio" name="color-radio">
+                <input class="product-page__color-radio form-styler product-page__color-radio--blue" type="radio"
+                  name="color-radio">
+                <input class="product-page__color-radio form-styler product-page__color-radio--orange" type="radio"
+                  name="color-radio">
+              </div>
+            </div>
+            <div class="product-page__form-item">
+              <span class="product-page__form-title">
+                Размер
+              </span>
+              <div class="product-page__form-size">
+                <input class="product-page__size-radio form-styler checked" type="radio" name="size-radio"
+                  id="size-radio1">
+                <label for="size-radio1" class="product-page__form-size-label">
+                  40.5
+                </label>
+                <input class="product-page__size-radio form-styler" type="radio" name="size-radio" id="size-radio2">
+                <label for="size-radio2" class="product-page__form-size-label">
+                  41
+                </label>
+                <input class="product-page__size-radio form-styler" type="radio" name="size-radio" id="size-radio3">
+                <label for="size-radio3" class="product-page__form-size-label">
+                  41.5
+                </label>
+                <input class="product-page__size-radio form-styler" type="radio" name="size-radio" id="size-radio4">
+                <label for="size-radio4" class="product-page__form-size-label">
+                  42
+                </label>
+                <input class="product-page__size-radio form-styler" type="radio" name="size-radio" id="size-radio5">
+                <label for="size-radio5" class="product-page__form-size-label">
+                  42.5
+                </label>
+                <input class="product-page__size-radio form-styler" type="radio" name="size-radio" id="size-radio6">
+                <label for="size-radio6" class="product-page__form-size-label">
+                  43
+                </label>
+              </div>
+            </div>
+            <div class="product-page__form-item">
+              <span class="product-page__form-title">
+                Доставка и оплата
+              </span>
+              <button class="product-page__show-btn"></button>
+              <div class="product-page__form-delivery-body-overlay"></div>
+              <div class="product-page__form-delivery product-page__form--hidden">
+                <div class="product-page__form-delivery-heading">
+                  <h5 class="product-page__form-delivery-title">Доставка в Одессу</h5>
+                  <a class="product-page__form-delivery-city" href="#">
+                    Выбрать другой город
+                  </a>
+                </div>
+
+                <input class="product-page__delivery-radio form-styler checked" type="radio" name="delivery-radio"
+                  id="delivery-option1">
+                <label class="product-page__delivery-option" for="delivery-option1">
+                  <p class="product-page__delivery-from product-page__delivery-from--rozetka">
+                    Самовывоз из наших магазинов
+                  </p>
+                  <p class="product-page__delivery-when">
+                    Забрать 4 сентября с 12:00
+                  </p>
+                  <p class="product-page__delivery-price">
+                    Бесплатно
+                  </p>
+                </label>
+
+                <input class="product-page__delivery-radio form-styler" type="radio" name="delivery-radio"
+                  id="delivery-option2">
+                <label class="product-page__delivery-option" for="delivery-option2">
+                  <p class="product-page__delivery-from product-page__delivery-from--newpost">
+                    Самовывоз из Новой Почты
+                  </p>
+                  <p class="product-page__delivery-when">
+                    Отправим завтра
+                  </p>
+                  <p class="product-page__delivery-price">
+                    Бесплатно
+                  </p>
+                </label>
+
+                <input class="product-page__delivery-radio form-styler" type="radio" name="delivery-radio"
+                  id="delivery-option3">
+                <label class="product-page__delivery-option" for="delivery-option3">
+                  <p class="product-page__delivery-from product-page__delivery-from--justin">
+                    Самовывоз из JustIn
+                  </p>
+                  <p class="product-page__delivery-when">
+                    Отправим завтра
+                  </p>
+                  <p class="product-page__delivery-price">
+                    Бесплатно
+                  </p>
+                </label>
+
+                <input class="product-page__delivery-radio form-styler" type="radio" name="delivery-radio"
+                  id="delivery-option4">
+                <label class="product-page__delivery-option" for="delivery-option4">
+                  <p class="product-page__delivery-from product-page__delivery-from--ukrpost">
+                    Самовывоз из Укрпочты
+                  </p>
+                  <p class="product-page__delivery-when">
+                    Отправим завтра
+                  </p>
+                  <p class="product-page__delivery-price">
+                    Бесплатно
+                  </p>
+                </label>
+
+                <input class="product-page__delivery-radio form-styler" type="radio" name="delivery-radio"
+                  id="delivery-option5">
+                <label class="product-page__delivery-option" for="delivery-option5">
+                  <p class="product-page__delivery-from product-page__delivery-from--newpost">
+                    Курьер Новая почта
+                  </p>
+                  <p class="product-page__delivery-when">
+                    Отправим завтра
+                  </p>
+                  <p class="product-page__delivery-price">
+                    60 &#8372;
+                  </p>
+                </label>
+
+                <div class="product-page__form-delivery-about">
+                  <div class="product-page__form-delivery-payment">
+                    <h5 class="product-page__delivery-about-heading">
+                      Оплата
+                    </h5>
+                    <p class="product-page__delivery-about-text">
+                      Наличными, Картой онлайн, Google Pay, Оплата через Masterpass, Безналичными для юридических лиц,
+                      Безналичными для физических лиц, PrivatPay, Кредит, Оплата частями
+                    </p>
+                  </div>
+                  <div class="product-page__form-delivery-guarantee">
+                    <h5 class="product-page__delivery-about-heading">
+                      Гарантия
+                    </h5>
+                    <p class="product-page__delivery-about-text">
+                      Обмен/возврат товара в течение 14 дней. Продавец гарантирует упаковку заказанного товара, которая
+                      обеспечит целостность и сохранность его товарного вида.
+                    </p>
+                  </div>
+                </div>
+                <button class="product-page__form-delivery-close-btn" type="button"></button>
+              </div>
+            </div>
+            <div class="product-page__form-item">
+              <span class="product-page__form-title">
+                Продавец
+              </span>
+              <div class="product-page__form-seller">
+                Rozetka <img src="images/rozetka-smile.svg" alt="">
+              </div>
+            </div>
+            <p class="product-page__product-descr">
+              Кроссовки Air Jordan 1 Mid созданы на основе первой модели AJ1 с дизайном, напоминающим фантазии
+              оригинальной модели о пути бренда Jordan с 1985 года.
+            </p>
+            <div class="product-page__purchasing">
+              <div class="product-page__price-row">
+                <span class="product-page__cart-price">3 065 &#8372;</span>
+                <p class="product-page__credit-text">
+                  от
+                  <span class="product-page__credit-price">468</span>&#8372;/месяц при покупке товара в кредит или
+                  оплате частями
+                </p>
+              </div>
+              <div class="product-page__purchase-row">
+                <button class="product-page__cart-btn">В корзину</button>
+                <button class="product-page__credit-btn">Купить в кредит</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-tabs">
+    <div class="container">
+      <div class="product-tabs__wrapper">
+        <div class="product-tabs__tabs">
+          <a class="product-tabs__tab product-tabs__tab--active" href="#product__props">
+            Характеристики
+          </a>
+          <a class="product-tabs__tab" href="#product__photos">
+            Фото
+          </a>
+          <a class="product-tabs__tab" href="#product__overviews">
+            Обзоры и видео
+          </a>
+          <a class="product-tabs__tab product-tabs__tab-reviews" href="#product__reviews">
+            Отзывы(<span>47</span>)
+          </a>
+          <a class="product-tabs__tab" href="#product__addition">
+            Покупают вместе
+          </a>
+        </div>
+        <div id="product__props" class="product-tabs__content  product-tabs__properties product-tabs__content--active">
+          <div class="product-tabs__content-heading">
+            <h4 class="product-tabs__content-title">
+              Характеристики
+            </h4>
+          </div>
+          <div class="properties-table__group">
+            <div class="properties-table__heading">
+              Основные
+            </div>
+            <table class="product-tabs__properties-table">
+              <tr>
+                <td class="properties-table__prop">Тип</td>
+                <td class="properties-table__value">Кеды</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Категория</td>
+                <td class="properties-table__value">Мужские</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Назначение</td>
+                <td class="properties-table__value">Баскетбол</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Верх</td>
+                <td class="properties-table__value">Удлиненный</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Вентиляция</td>
+                <td class="properties-table__value">Да</td>
+              </tr>
+            </table>
+          </div>
+          <div class="properties-table__group">
+            <div class="properties-table__heading">
+              Особенности конструкции
+            </div>
+            <table class="product-tabs__properties-table">
+              <tr>
+                <td class="properties-table__prop">Фиксация</td>
+                <td class="properties-table__value">Шнуровка</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Подошва</td>
+                <td class="properties-table__value">Плоская</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Носки</td>
+                <td class="properties-table__value">Укрепленные</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Фиксация щиколотки</td>
+                <td class="properties-table__value">Да</td>
+              </tr>
+              <tr>
+            </table>
+          </div>
+          <div class="properties-table__group">
+            <div class="properties-table__heading">
+              Материал
+            </div>
+            <table class="product-tabs__properties-table">
+              <tr>
+                <td class="properties-table__prop">Подошва</td>
+                <td class="properties-table__value">100% резина</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Наружный основной</td>
+                <td class="properties-table__value">100% кожа</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Материал отделки</td>
+                <td class="properties-table__value">80% нейлон, 20% резина</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Подкладка</td>
+                <td class="properties-table__value">100% полиэстр</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Стелька</td>
+                <td class="properties-table__value">90% полиуретан, 10% резина</td>
+              </tr>
+              <tr>
+                <td class="properties-table__prop">Шнурки</td>
+                <td class="properties-table__value">95% хлопок, 5% пластик</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id="product__photos" class="product-tabs__content">
+          <div class="product-tabs__photos">
+            <div class="product-tabs__photo-wrapper">
+              <img class="product-tabs__general-photo" src="images/content/product-page-product-1.webp">
+            </div>
+            <div class="product-tabs__photo-wrapper">
+              <img class="product-tabs__general-photo" src="images/content/product-page-product-2.webp">
+            </div>
+            <div class="product-tabs__photo-wrapper">
+              <img class="product-tabs__general-photo" src="images/content/product-page-product-3.webp">
+            </div>
+            <div class="product-tabs__photo-wrapper">
+              <img class="product-tabs__general-photo" src="images/content/product-page-product-4.webp">
+            </div>
+            <div class="product-tabs__photo-wrapper">
+              <img class="product-tabs__general-photo" src="images/content/product-page-product-5.webp">
+            </div>
+          </div>
+        </div>
+        <div id="product__overviews" class="product-tabs__content product-tabs__overviews">
+          <div class="product-tabs__content-heading">
+            <h4 class="product-tabs__content-title">
+              Распаковка Баскетбольных Кроссовок Nike Air Jordan 1 Mid от Розетки
+            </h4>
+            <a class="product-tabs__content-link" href="#">
+              Наш канал на YouTube
+            </a>
+          </div>
+          <video class="product-tabs__content-video video-js" controls>
+            <source src="videos/unpacking.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div id="product__reviews" class="product-tabs__content product-tabs__reviews">
+          <div class="product-tabs__content-heading">
+            <h4 class="product-tabs__content-title">
+              Отзывы <span>47</span>
+            </h4>
+            <div class="product-tabs__content-rating" data-rateyo-rating="4"></div>
+            <form class="product-page__reviews-filter">
+              <span class="product-page__reviews-filter-title">
+                Показывать отзывы:
+              </span>
+              <label class="product-page__reviews-filter-label">
+                <input class="product-page__reviews-filter-checkbox form-styler" type="checkbox">
+                Отзывы с фото и видео
+              </label>
+              <label class="product-page__reviews-filter-label">
+                <input class="product-page__reviews-filter-checkbox form-styler" type="checkbox">
+                От реальных покупателей
+              </label>
+              <select class="product-page__reviews-filter-select form-styler">
+                <option class="product-page__reviews-filter-option">Сначала самые новые</option>
+                <option class="product-page__reviews-filter-option">Сначала самые популярные</option>
+                <option class="product-page__reviews-filter-option">Сначала старые</option>
+              </select>
+              <button class="product-page__reviews-filter-submit" type="submit">
+                Написать отзыв
+              </button>
+            </form>
+          </div>
+          <div class="product-page__review">
+            <div class="product-page__review-heading">
+              <div class="product-page__review-info">
+                <p class="product-page__review-author">Maria Veselova</p>
+                <p class="product-page__review-date">31 августа 2020</p>
+              </div>
+              <div class="product-page__review-rating" data-rateyo-rating="3">
+              </div>
+            </div>
+            <div class="product-page__review-content">
+              <div class="product-page__review-text">
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+              </div>
+            </div>
+            <div class="product-page__review-footer">
+              <a class="product-page__review-complain" href="#">
+                Пожаловаться
+              </a>
+              <div class="product-page__review-rate">
+                <button class="product-page__review-like">
+                </button>
+                <span class="product-page__review-like-number">11</span>
+
+                <button class="product-page__review-dislike">
+                </button>
+                <span class="product-page__review-dislike-number">8</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-page__review">
+            <div class="product-page__review-heading">
+              <div class="product-page__review-info">
+                <p class="product-page__review-author">Maria Veselova</p>
+                <p class="product-page__review-date">31 августа 2020</p>
+              </div>
+              <div class="product-page__review-rating" data-rateyo-rating="3">
+              </div>
+            </div>
+            <div class="product-page__review-content">
+              <div class="product-page__review-text">
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+              </div>
+            </div>
+            <div class="product-page__review-footer">
+              <a class="product-page__review-complain" href="#">
+                Пожаловаться
+              </a>
+              <div class="product-page__review-rate">
+                <button class="product-page__review-like">
+                </button>
+                <span class="product-page__review-like-number">11</span>
+
+                <button class="product-page__review-dislike">
+                </button>
+                <span class="product-page__review-dislike-number">8</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-page__review">
+            <div class="product-page__review-heading">
+              <div class="product-page__review-info">
+                <p class="product-page__review-author">Maria Veselova</p>
+                <p class="product-page__review-date">31 августа 2020</p>
+              </div>
+              <div class="product-page__review-rating" data-rateyo-rating="3">
+              </div>
+            </div>
+            <div class="product-page__review-content">
+              <div class="product-page__review-text">
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+              </div>
+            </div>
+            <div class="product-page__review-footer">
+              <a class="product-page__review-complain" href="#">
+                Пожаловаться
+              </a>
+              <div class="product-page__review-rate">
+                <button class="product-page__review-like">
+                </button>
+                <span class="product-page__review-like-number">11</span>
+
+                <button class="product-page__review-dislike">
+                </button>
+                <span class="product-page__review-dislike-number">8</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-page__review">
+            <div class="product-page__review-heading">
+              <div class="product-page__review-info">
+                <p class="product-page__review-author">Maria Veselova</p>
+                <p class="product-page__review-date">31 августа 2020</p>
+              </div>
+              <div class="product-page__review-rating" data-rateyo-rating="3">
+              </div>
+            </div>
+            <div class="product-page__review-content">
+              <div class="product-page__review-text">
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+              </div>
+            </div>
+            <div class="product-page__review-footer">
+              <a class="product-page__review-complain" href="#">
+                Пожаловаться
+              </a>
+              <div class="product-page__review-rate">
+                <button class="product-page__review-like">
+                </button>
+                <span class="product-page__review-like-number">11</span>
+
+                <button class="product-page__review-dislike">
+                </button>
+                <span class="product-page__review-dislike-number">8</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-page__review">
+            <div class="product-page__review-heading">
+              <div class="product-page__review-info">
+                <p class="product-page__review-author">Maria Veselova</p>
+                <p class="product-page__review-date">31 августа 2020</p>
+              </div>
+              <div class="product-page__review-rating" data-rateyo-rating="3">
+              </div>
+            </div>
+            <div class="product-page__review-content">
+              <div class="product-page__review-text">
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+              </div>
+            </div>
+            <div class="product-page__review-footer">
+              <a class="product-page__review-complain" href="#">
+                Пожаловаться
+              </a>
+              <div class="product-page__review-rate">
+                <button class="product-page__review-like">
+                </button>
+                <span class="product-page__review-like-number">11</span>
+
+                <button class="product-page__review-dislike">
+                </button>
+                <span class="product-page__review-dislike-number">8</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-page__review">
+            <div class="product-page__review-heading">
+              <div class="product-page__review-info">
+                <p class="product-page__review-author">Maria Veselova</p>
+                <p class="product-page__review-date">31 августа 2020</p>
+              </div>
+              <div class="product-page__review-rating" data-rateyo-rating="3">
+              </div>
+            </div>
+            <div class="product-page__review-content">
+              <div class="product-page__review-text">
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью. Сначала муж хотел
+                купить американскую
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+                гордость кроссовки Nike. На родном сайте Nike есть возможность не просто выбрать понравившуюся модель и
+                расцветку, а создать свою эксклюзивную модель.
+                В прошлом году настал момент обновить мужской летний гардероб спортивной обувью.
+              </div>
+            </div>
+            <div class="product-page__review-footer">
+              <a class="product-page__review-complain" href="#">
+                Пожаловаться
+              </a>
+              <div class="product-page__review-rate">
+                <button class="product-page__review-like">
+                </button>
+                <span class="product-page__review-like-number">11</span>
+
+                <button class="product-page__review-dislike">
+                </button>
+                <span class="product-page__review-dislike-number">8</span>
+              </div>
+            </div>
+          </div>
+          <button class="product-page__reviews-showmore-btn">Показать еще</button>
+        </div>
+        <div id="product__addition" class="product-tabs__content">
+          <div class="product-tabs__addition">
+
+            <div class="product__item product__item--new">
+              <a class="product__item-image" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/content/product-img-2.webp">
+                  <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                </picture>
+              </a>
+              <a class="product__item-category" href="#">
+                мобильные телефоны
+              </a>
+              <a class="product__item-title" href="#">
+                Мобильный телефон Xiaomi Mi 10 Pro
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3"></div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-price">
+                <div class="product__price-old">35 000 &#8372;</div>
+                <div class="product__price-new">27 999 &#8372;</div>
+              </div>
+              <button class="product__item-cart"></button>
+              <button class="product__item-like"></button>
+            </div>
+            <div class="product__item product__item--sale">
+              <a class="product__item-image" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/content/product-img-2.webp">
+                  <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                </picture>
+              </a>
+              <a class="product__item-category" href="#">
+                мобильные телефоны
+              </a>
+              <a class="product__item-title" href="#">
+                Мобильный телефон Xiaomi Mi 10 Pro
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3"></div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-price">
+                <div class="product__price-old">35 000 &#8372;</div>
+                <div class="product__price-new">27 999 &#8372;</div>
+              </div>
+              <button class="product__item-cart"></button>
+              <button class="product__item-like"></button>
+            </div>
+            <div class="product__item">
+              <a class="product__item-image" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/content/product-img-2.webp">
+                  <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                </picture>
+              </a>
+              <a class="product__item-category" href="#">
+                мобильные телефоны
+              </a>
+              <a class="product__item-title" href="#">
+                Мобильный телефон Xiaomi Mi 10 Pro
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3"></div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-price">
+                <div class="product__price-old">35 000 &#8372;</div>
+                <div class="product__price-new">27 999 &#8372;</div>
+              </div>
+              <button class="product__item-cart"></button>
+              <button class="product__item-like"></button>
+            </div>
+            <div class="product__item product__item--sale">
+              <a class="product__item-image" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/content/product-img-2.webp">
+                  <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                </picture>
+              </a>
+              <a class="product__item-category" href="#">
+                мобильные телефоны
+              </a>
+              <a class="product__item-title" href="#">
+                Мобильный телефон Xiaomi Mi 10 Pro
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3"></div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-price">
+                <div class="product__price-old">35 000 &#8372;</div>
+                <div class="product__price-new">27 999 &#8372;</div>
+              </div>
+              <button class="product__item-cart"></button>
+              <button class="product__item-like"></button>
+            </div>
+            <div class="product__item">
+              <a class="product__item-image" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/content/product-img-2.webp">
+                  <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                </picture>
+              </a>
+              <a class="product__item-category" href="#">
+                мобильные телефоны
+              </a>
+              <a class="product__item-title" href="#">
+                Мобильный телефон Xiaomi Mi 10 Pro
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3"></div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-price">
+                <div class="product__price-old">35 000 &#8372;</div>
+                <div class="product__price-new">27 999 &#8372;</div>
+              </div>
+              <button class="product__item-cart"></button>
+              <button class="product__item-like"></button>
+            </div>
+            <div class="product__item product__item--new">
+              <a class="product__item-image" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/content/product-img-2.webp">
+                  <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                </picture>
+              </a>
+              <a class="product__item-category" href="#">
+                мобильные телефоны
+              </a>
+              <a class="product__item-title" href="#">
+                Мобильный телефон Xiaomi Mi 10 Pro
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3"></div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-price">
+                <div class="product__price-old">35 000 &#8372;</div>
+                <div class="product__price-new">27 999 &#8372;</div>
+              </div>
+              <button class="product__item-cart"></button>
+              <button class="product__item-like"></button>
+            </div>
+            <div class="product__item">
+              <a class="product__item-image" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/content/product-img-2.webp">
+                  <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                </picture>
+              </a>
+              <a class="product__item-category" href="#">
+                мобильные телефоны
+              </a>
+              <a class="product__item-title" href="#">
+                Мобильный телефон Xiaomi Mi 10 Pro
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3"></div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-price">
+                <div class="product__price-old">35 000 &#8372;</div>
+                <div class="product__price-new">27 999 &#8372;</div>
+              </div>
+              <button class="product__item-cart"></button>
+              <button class="product__item-like"></button>
+            </div>
+            <div class="product__item">
+              <a class="product__item-image" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/content/product-img-2.webp">
+                  <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                </picture>
+              </a>
+              <a class="product__item-category" href="#">
+                мобильные телефоны
+              </a>
+              <a class="product__item-title" href="#">
+                Мобильный телефон Xiaomi Mi 10 Pro
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3"></div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-price">
+                <div class="product__price-old">35 000 &#8372;</div>
+                <div class="product__price-new">27 999 &#8372;</div>
+              </div>
+              <button class="product__item-cart"></button>
+              <button class="product__item-like"></button>
+            </div>
+            <div class="product__item product__item--new">
+              <a class="product__item-image" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/content/product-img-2.webp">
+                  <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                </picture>
+              </a>
+              <a class="product__item-category" href="#">
+                мобильные телефоны
+              </a>
+              <a class="product__item-title" href="#">
+                Мобильный телефон Xiaomi Mi 10 Pro
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3"></div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-price">
+                <div class="product__price-old">35 000 &#8372;</div>
+                <div class="product__price-new">27 999 &#8372;</div>
+              </div>
+              <button class="product__item-cart"></button>
+              <button class="product__item-like"></button>
+            </div>
+            <div class="product__item">
+              <a class="product__item-image" href="#">
+                <picture>
+                  <source type="image/webp" srcset="images/content/product-img-2.webp">
+                  <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                </picture>
+              </a>
+              <a class="product__item-category" href="#">
+                мобильные телефоны
+              </a>
+              <a class="product__item-title" href="#">
+                Мобильный телефон Xiaomi Mi 10 Pro
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3"></div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-price">
+                <div class="product__price-old">35 000 &#8372;</div>
+                <div class="product__price-new">27 999 &#8372;</div>
+              </div>
+              <button class="product__item-cart"></button>
+              <button class="product__item-like"></button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="general-section section">
+    <div class="container">
+      <div class="section__heading">
+        <h4 class="section__title">
+          С этим товаром также покупают
+        </h4>
+        <a class="section__link" href="#">Смотреть все</a>
+      </div>
+      <div class="product__slider-wrapper">
+        <div class="swiper-container product__slider-container">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="product__item">
+                <a class="product__item-image" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-img-1.webp">
+                    <img class="product__img" src="images/content/product-img-1.webp" alt="">
+                  </picture>
+                </a>
+                <a class="product__item-category" href="#">
+                  мобильные телефоны
+                </a>
+                <a class="product__item-title" href="#">
+                  Мобильный телефон Xiaomi Mi 10 Pro
+                </a>
+                <div class="product__item-rating">
+                  <div class="product__rating" data-rateyo-rating="4.3"></div>
+                  <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+                </div>
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">27 999 &#8372;</div>
+                </div>
+                <button class="product__item-cart"></button>
+                <button class="product__item-like"></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__item product__item--sale">
+                <a class="product__item-image" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-img-2.webp">
+                    <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                  </picture>
+                </a>
+                <a class="product__item-category" href="#">
+                  мобильные телефоны
+                </a>
+                <a class="product__item-title" href="#">
+                  Мобильный телефон Xiaomi Mi 10 Pro
+                </a>
+                <div class="product__item-rating">
+                  <div class="product__rating" data-rateyo-rating="4.3"></div>
+                  <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+                </div>
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">27 999 &#8372;</div>
+                </div>
+                <button class="product__item-cart"></button>
+                <button class="product__item-like"></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__item product__item--new">
+                <a class="product__item-image" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-img-3.webp">
+                    <img class="product__img" src="images/content/product-img-3.webp" alt="">
+                  </picture>
+                </a>
+                <a class="product__item-category" href="#">
+                  мобильные телефоны
+                </a>
+                <a class="product__item-title" href="#">
+                  Мобильный телефон Xiaomi Mi 10 Pro
+                </a>
+                <div class="product__item-rating">
+                  <div class="product__rating" data-rateyo-rating="4.3"></div>
+                  <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+                </div>
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">27 999 &#8372;</div>
+                </div>
+                <button class="product__item-cart"></button>
+                <button class="product__item-like"></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__item">
+                <a class="product__item-image" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-img-4.webp">
+                    <img class="product__img" src="images/content/product-img-4.webp" alt="">
+                  </picture>
+                </a>
+                <a class="product__item-category" href="#">
+                  мобильные телефоны
+                </a>
+                <a class="product__item-title" href="#">
+                  Мобильный телефон Xiaomi Mi 10 Pro
+                </a>
+                <div class="product__item-rating">
+                  <div class="product__rating" data-rateyo-rating="4.3"></div>
+                  <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+                </div>
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">27 999 &#8372;</div>
+                </div>
+                <button class="product__item-cart"></button>
+                <button class="product__item-like"></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__item">
+                <a class="product__item-image" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-img-5.webp">
+                    <img class="product__img" src="images/content/product-img-5.webp" alt="">
+                  </picture>
+                </a>
+                <a class="product__item-category" href="#">
+                  мобильные телефоны
+                </a>
+                <a class="product__item-title" href="#">
+                  Мобильный телефон Xiaomi Mi 10 Pro
+                </a>
+                <div class="product__item-rating">
+                  <div class="product__rating" data-rateyo-rating="4.3"></div>
+                  <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+                </div>
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">27 999 &#8372;</div>
+                </div>
+                <button class="product__item-cart"></button>
+                <button class="product__item-like"></button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product__item product__item--new">
+                <a class="product__item-image" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-img-1.webp">
+                    <img class="product__img" src="images/content/product-img-1.webp" alt="">
+                  </picture>
+                </a>
+                <a class="product__item-category" href="#">
+                  мобильные телефоны
+                </a>
+                <a class="product__item-title" href="#">
+                  Мобильный телефон Xiaomi Mi 10 Pro
+                </a>
+                <div class="product__item-rating">
+                  <div class="product__rating" data-rateyo-rating="4.3"></div>
+                  <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+                </div>
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">27 999 &#8372;</div>
+                </div>
+                <button class="product__item-cart"></button>
+                <button class="product__item-like"></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__item product__item--new">
+                <a class="product__item-image" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-img-2.webp">
+                    <img class="product__img" src="images/content/product-img-2.webp" alt="">
+                  </picture>
+                </a>
+                <a class="product__item-category" href="#">
+                  мобильные телефоны
+                </a>
+                <a class="product__item-title" href="#">
+                  Мобильный телефон Xiaomi Mi 10 Pro
+                </a>
+                <div class="product__item-rating">
+                  <div class="product__rating" data-rateyo-rating="4.3"></div>
+                  <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+                </div>
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">27 999 &#8372;</div>
+                </div>
+                <button class="product__item-cart"></button>
+                <button class="product__item-like"></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__item product__item--new">
+                <a class="product__item-image" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-img-3.webp">
+                    <img class="product__img" src="images/content/product-img-3.webp" alt="">
+                  </picture>
+                </a>
+                <a class="product__item-category" href="#">
+                  мобильные телефоны
+                </a>
+                <a class="product__item-title" href="#">
+                  Мобильный телефон Xiaomi Mi 10 Pro
+                </a>
+                <div class="product__item-rating">
+                  <div class="product__rating" data-rateyo-rating="4.3"></div>
+                  <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+                </div>
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">27 999 &#8372;</div>
+                </div>
+                <button class="product__item-cart"></button>
+                <button class="product__item-like"></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__item product__item--new">
+                <a class="product__item-image" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-img-4.webp">
+                    <img class="product__img" src="images/content/product-img-4.webp" alt="">
+                  </picture>
+                </a>
+                <a class="product__item-category" href="#">
+                  мобильные телефоны
+                </a>
+                <a class="product__item-title" href="#">
+                  Мобильный телефон Xiaomi Mi 10 Pro
+                </a>
+                <div class="product__item-rating">
+                  <div class="product__rating" data-rateyo-rating="4.3"></div>
+                  <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+                </div>
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">27 999 &#8372;</div>
+                </div>
+                <button class="product__item-cart"></button>
+                <button class="product__item-like"></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__item product__item--new">
+                <a class="product__item-image" href="#">
+                  <picture>
+                    <source type="image/webp" srcset="images/content/product-img-5.webp">
+                    <img class="product__img" src="images/content/product-img-5.webp" alt="">
+                  </picture>
+                </a>
+                <a class="product__item-category" href="#">
+                  мобильные телефоны
+                </a>
+                <a class="product__item-title" href="#">
+                  Мобильный телефон Xiaomi Mi 10 Pro
+                </a>
+                <div class="product__item-rating">
+                  <div class="product__rating" data-rateyo-rating="4.3"></div>
+                  <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+                </div>
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">27 999 &#8372;</div>
+                </div>
+                <button class="product__item-cart"></button>
+                <button class="product__item-like"></button>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__items-wrapper">
+          <div class="footer__top-item">
+            <p class="footer__item-title">Помощь</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Кредит</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Гарантия</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Возврат товара</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Сервисные центры</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Вопросы и ответы</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Отследить заказ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <p class="footer__item-title">Информация о компании</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">О нас</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Адреса магазинов</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Условия использования сайта</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Вакансии</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <p class="footer__item-title">Сервисы</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Бонусный счет</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Rozetka Premium</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Подарочные сертификаты</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Перевод денег</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Туры и отдых</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <p class="footer__item-title">Партнерам</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Продавать на Розетке</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Сотрудничество с нами</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Логотип и стайлгайд</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <p class="footer__item-title">Call-центр</p>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="tel:380445370222">+38 044 537 02 22</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="tel:380445038080">+38 044 503 80 80</a>
+              </li>
+              <li class="footer__list-item">
+                <p>В будние с 08:00 до 21:00</p>
+                <p>Суббота с 09:00 до 20:00</p>
+                <p>Воскресенье с 10:00 до 19:00</p>
+              </li>
+              <li class="footer__list-item footer__list-socials">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a class="socials__link" href="#">
+                      <img class="socials__img" src="images/facebook.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href="#">
+                      <img class="socials__img" src="images/twitter.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href="#">
+                      <img class="socials__img" src="images/youtube.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href="#">
+                      <img class="socials__img" src="images/instagram.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a class="socials__link" href="#">
+                      <img class="socials__img" src="images/vk-social-logotype.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-wrapper">
+          <a class="logo logo--footer" href="#">
+            <picture>
+              <source type="image/webp" srcset="images/logo-small.svg" media="(max-width: 480px)">
+              <img class="logo-img" src="images/logo-large.svg" alt="Logo">
+            </picture>
+          </a>
+          <span class="copyright">
+            &copy; Интернет-магазин Розетка 2001–2020
+          </span>
+          <div class="footer__download">
+            <span class="footer__download-text">
+              Устанавливайте наши приложения
+            </span>
+            <a class="footer__download-link" href="#">
+              <img class="footer__download-img" src="images/google-play-badge.svg" alt="">
+            </a>
+            <a class="footer__download-link" href="#">
+              <img class="footer__download-img" src="images/app-store-badge.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
