@@ -1,26 +1,104 @@
 <!DOCTYPE html>
-<html>
-<style>
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+<html lang="en">
 
-  th,
-  td {
-    padding: 5px;
-  }
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
+
+
   <h1>The XMLHttpRequest Object</h1>
 
-  <button type="button" onclick="loadDoc()">Get my CD collection</button>
+  <button type="button" onclick="loadDoc()">Get my catalog</button>
   <br><br>
-  <table id="demo"></table>
+  <div id="demo">
+    <!-- <div class="product__item product__item--sale">
+      <a class="product__item-image" href="#">
+        <picture>
+          <source type="image/webp" srcset="images/product-img-12.webp">
+          <img class="product__img" src="images/product-img-12.webp" alt="">
+        </picture>
+      </a>
+      <div class="product__item-descr">
+        <a class="product__item-category" href="#">
+          мобильные телефоны
+        </a>
+        <a class="product__item-title" href="#">
+          Мобильный телефон Xiaomi Mi 10 Pro
+        </a>
+        <div class="product__item-rating">
+          <div class="product__rating" data-rateyo-rating="4.3">4.3</div>
+          <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+        </div>
+        <div class="product__item-footer">
+          <div class="product__item-price">
+            <div class="product__price-old">35 000 &#8372;</div>
+            <div class="product__price-new">27 999 &#8372;</div>
+          </div>
+          <a href="#" class="product__item-purchase">Купить</a>
+        </div>
+      </div>
+    </div>
+    <div class="product__item">
+      <a class="product__item-image" href="#">
+        <picture>
+          <source type="image/webp" srcset="images/product-img-13.webp">
+          <img class="product__img" src="images/product-img-13.webp" alt="">
+        </picture>
+      </a>
+      <div class="product__item-descr">
+        <a class="product__item-category" href="#">
+          мобильные телефоны
+        </a>
+        <a class="product__item-title" href="#">
+          Мобильный телефон Xiaomi Mi 10 Pro
+        </a>
+        <div class="product__item-rating">
+          <div class="product__rating" data-rateyo-rating="4.3">4.3</div>
+          <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+        </div>
+        <div class="product__item-footer">
+          <div class="product__item-price">
+            <div class="product__price-old">35 000 &#8372;</div>
+            <div class="product__price-new">27 999 &#8372;</div>
+          </div>
+          <a href="#" class="product__item-purchase">Купить</a>
+        </div>
+      </div>
+    </div>
+    <div class="product__item product__item--new">
+      <a class="product__item-image" href="#">
+        <picture>
+          <source type="image/webp" srcset="images/product-img-8.webp">
+          <img class="product__img" src="images/product-img-8.webp" alt="">
+        </picture>
+      </a>
+      <div class="product__item-descr">
+        <a class="product__item-category" href="#">
+          мобильные телефоны
+        </a>
+        <a class="product__item-title" href="#">
+          Мобильный телефон Xiaomi Mi 10 Pro
+        </a>
+        <div class="product__item-rating">
+          <div class="product__rating" data-rateyo-rating="4.3">4.3</div>
+          <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+        </div>
+        <div class="product__item-footer">
+          <div class="product__item-price">
+            <div class="product__price-old">35 000 &#8372;</div>
+            <div class="product__price-new">27 999 &#8372;</div>
+          </div>
+          <a href="#" class="product__item-purchase">Купить</a>
+        </div>
+      </div>
+    </div> -->
+  </div>
 
   <script>
     function loadDoc() {
@@ -30,22 +108,48 @@
           myFunction(this);
         }
       };
-      xhttp.open("GET", "cd_catalog.xml", true);
+      xhttp.open("GET", 'cd_catalog.xml?r=' + Math.random(), true);
       xhttp.send();
     }
     function myFunction(xml) {
-      var i;
-      var xmlDoc = xml.responseXML;
-      var table = "<tr><th>Artist</th><th>Title</th></tr>";
-      var x = xmlDoc.getElementsByTagName("CD");
-      for (i = 0; i < x.length; i++) {
-        table += "<tr><td>" +
-          x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-          "</td><td>" +
-          x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-          "</td></tr>";
+      let xmlDOM = xml.responseXML
+      let elements = xmlDOM.getElementsByTagName('PRODUCT')
+      // console.log(xmlDOM);
+      for (let i = 0; i < elements.length; i++) {
+        let category = elements[i].getElementsByTagName('CATEGORY')[0].childNodes[0].nodeValue
+        let title = elements[i].getElementsByTagName('NAME')[0].childNodes[0].nodeValue
+        let rating = elements[i].getElementsByTagName('RATING')[0].childNodes[0].nodeValue
+        let price = elements[i].getElementsByTagName('PRICE')[0].childNodes[0].nodeValue
+        let imgsrc = elements[i].getElementsByTagName('IMGSRC')[0].childNodes[0].nodeValue
+        document.getElementById('demo').innerHTML +=
+          `<div class="product__item">
+            <a class="product__item-image" href="#">
+            <picture>
+              <source type="image/webp" srcset="${imgsrc}">
+              <img class="product__img" src="${imgsrc}" alt="Product image">
+            </picture>
+            </a>
+            <div class="product__item-descr">
+              <a class="product__item-category" href="#">
+                ${category}
+              </a>
+              <a class="product__item-title" href="#">
+                ${title}
+              </a>
+              <div class="product__item-rating">
+                <div class="product__rating" data-rateyo-rating="4.3">${rating}</div>
+                <div class="product__item-reviews"><span class="product__reviews-number">17</span> отзывов</div>
+              </div>
+              <div class="product__item-footer">
+                <div class="product__item-price">
+                  <div class="product__price-old">35 000 &#8372;</div>
+                  <div class="product__price-new">${price} &#8372;</div>
+                </div>
+                <a href="#" class="product__item-purchase">Купить</a>
+              </div>
+            </div>
+          </div>`
       }
-      document.getElementById("demo").innerHTML = table;
     }
   </script>
 
