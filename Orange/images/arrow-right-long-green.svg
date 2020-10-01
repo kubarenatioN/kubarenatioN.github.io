@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="350px" height="70px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 3500 700"
+ xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FFA046">
+   <polygon points="0,300 2700,300 2700,400 0,400 "/>
+   <polyline stroke="#FFA046" stroke-width="90.004" stroke-linecap="square" points="2454,67 2737,350 2454,633 "/>
+</svg>
