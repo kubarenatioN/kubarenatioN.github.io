@@ -337,14 +337,14 @@ $(function () {
 
   function hideDeliveryForm() {
     $('.product-page__form-delivery').addClass('product-page__form--hidden')
-    $('body').removeClass('body-overflow-off')
+    $('body').removeClass('body-delivery-overflow-off')
     $('body').css({
       paddingRight: 0
     })
   }
   function showDeliveryForm() {
     $('.product-page__form-delivery').removeClass('product-page__form--hidden')
-    $('body').addClass('body-overflow-off')
+    $('body').addClass('body-delivery-overflow-off')
     $('body').css({
       paddingRight: scrollBarWidth + 'px'
     })
@@ -385,7 +385,7 @@ $(function () {
     })
   })
 
-  $('.catalog__product-color').on('click', function () {
+  $('.catalog__product-color').on('click', function () {//меняет цвет
     $(this).siblings().removeClass('active')
     $(this).addClass('active')
     let colorPostfix = $(this).data('color')
@@ -401,7 +401,7 @@ $(function () {
     sourceTag.attr('srcset', newSrc)
   })
 
-  function BuildSrc($img) {
+  function BuildSrc($img) {//формирует части строки пути
     let img = $img.find('.catalog__product-img')//getting an image object
     let sourceTag = img.siblings('source')
 
@@ -434,7 +434,7 @@ $(function () {
     return strParts
   }
 
-  $('.catalog .product__item').hover(
+  $('.catalog .product__item').hover(//меняет картинку, цвет тот же
     function () {
       let strParts = BuildSrc($(this))
       let hoveredSrc = strParts.hoveredSrc + 'f-' + strParts.colorPostfix + strParts.srcExtension
@@ -552,6 +552,44 @@ $(function () {
       $('.footer__item-title').next().slideUp(200)
       $(this).next().slideDown(200)
     }
+  })
+
+  scrollDir({
+    dir: "up",
+  })
+
+  for (let i = 0; i < $('.product-page__color-radio').length; i++) {
+    $($('.product-page__color-radio')[i]).parent().css({
+      backgroundColor: $($('.product-page__color-radio')[i]).css('backgroundColor')
+    })
+  }
+  
+  function ChangeProductColor() {
+
+  }
+
+  $('input.product-page__color-radio').on('click', function() {
+    let colorId = $(this).data('product-color')
+    let img = $('.product-page__slider-image')
+    let source = img.siblings('source')
+    let src = img.attr('src')
+    let indexOfDot = src.indexOf('.')//getting index of .
+    let srcExtension = src.slice(indexOfDot)//getting extension
+    let sourceSrcExtension = source.attr('srcset').slice(indexOfDot)//getting extension
+    src = src.slice(0, indexOfDot)
+    let baseSrc = src.slice(0, src.length - 5)
+    $('.product-page__slider-item').each((index, el) => {//меняем ракурс фото с помощью добавления нумерации через each в строку пути картинки
+      let img = $(el).find('.product-page__slider-image')
+      newSrc = baseSrc + (index + 1) + '-' + colorId + srcExtension
+      img.attr('src', newSrc)
+      let source = $(el).find('source')
+      newSourceSrc = baseSrc + (index + 1) + '-' + colorId + sourceSrcExtension
+      source.attr('srcset', newSourceSrc)
+    })
+    // newSrc = baseSrc + colorId + srcExtension
+    // newSourceSrc = baseSrc + colorId + sourceSrcExtension
+    // img.attr('src', newSrc)
+    // source.attr('srcset', newSourceSrc)
   })
 
 })
