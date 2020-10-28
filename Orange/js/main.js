@@ -47,7 +47,7 @@ $(function () {
     $('.header__slider').find('br').remove()
   }
 
-  
+
   // for (let i = 0; i < $('.product__slider-container').length; i++) {
   //   generalSwipers[i] = new Swiper('.product__slider-container', {
   //     pagination: {
@@ -87,52 +87,93 @@ $(function () {
   //     },
   //   })
   // }
-  
-  
-  let productSwiper = new Swiper('.product__slider-container', {
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      // when window width is >= 320px
-      // 320: {
-      //   slidesPerView: 2,
-      //   spaceBetween: 10
-      // },
-      769: {
-        slidesPerView: 3,
-        spaceBetween: 20
+
+  let productSwiper
+  if ($(window).width() + scrollBarWidth > 768) {
+
+    productSwiper = new Swiper('.product__slider-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
-      1001: {
-        slidesPerView: 4,
-        spaceBetween: 10
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
-      1201: {
-        slidesPerView: 4,
-        spaceBetween: 30
+      breakpoints: {
+        // when window width is >= 320px
+        // 320: {
+        //   slidesPerView: 2,
+        //   spaceBetween: 10
+        // },
+        769: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        1001: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        },
+        1201: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        },
+        1367: {
+          slidesPerView: 5,
+          spaceBetween: 15
+        },
+        1600: {
+          slidesPerView: 5,
+          spaceBetween: 30
+        }
       },
-      1367: {
-        slidesPerView: 5,
-        spaceBetween: 15
-      },
-      1600: {
-        slidesPerView: 5,
-        spaceBetween: 30
-      }
-    },
-  })
-// console.log(productSwiper[0])
-  if ($(window).width() + scrollBarWidth < 769) {
-    for (let i = 0; i < productSwiper.length; i++) {
-      let el = productSwiper[i]
-      el.destroy(true, true)
-    }
+    })
+
   }
+  // let productSwiper = new Swiper('.product__slider-container', {
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true,
+  //   },
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  //   breakpoints: {
+  //     // when window width is >= 320px
+  //     // 320: {
+  //     //   slidesPerView: 2,
+  //     //   spaceBetween: 10
+  //     // },
+  //     769: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 20
+  //     },
+  //     1001: {
+  //       slidesPerView: 4,
+  //       spaceBetween: 10
+  //     },
+  //     1201: {
+  //       slidesPerView: 4,
+  //       spaceBetween: 30
+  //     },
+  //     1367: {
+  //       slidesPerView: 5,
+  //       spaceBetween: 15
+  //     },
+  //     1600: {
+  //       slidesPerView: 5,
+  //       spaceBetween: 30
+  //     }
+  //   },
+  // })
+  // console.log(productSwiper)
+  // if ($(window).width() + scrollBarWidth < 769) {
+  //   for (let i = 0; i < productSwiper.length; i++) {
+  //     let el = productSwiper[i]
+  //     el.destroy(true, true)
+  //   }
+  // }
 
   const productSwiperHuge = new Swiper('.product__slider-huge-container', {
     slidesPerView: 'auto',
@@ -237,14 +278,12 @@ $(function () {
     $(this).toggleClass('product__item-like--active')
   })
 
-  const videos = document.querySelectorAll('.video-js')
+  const videos = document.querySelectorAll('.swiper-slide .video-js')
   const players = []
-
   for (let i = 0; i < videos.length; i++) {
     players[i] = videojs(videos[i])
   }
-
-  $('.video-js').on('click', function () {
+  $('.swiper-slide .video-js').on('touchend', function () {
     const index = $(this).closest('.swiper-slide').index()
     if ($(this).hasClass('vjs-paused')) {
       players[index].play()
@@ -253,7 +292,7 @@ $(function () {
       players[index].pause()
     }
   })
-  $('.video-js').on('dblclick', function () {
+  $('.swiper-slide .video-js').on('dblclick', function () {
     const index = $(this).closest('.swiper-slide').index()
     if ($(this).hasClass('vjs-fullscreen')) {
       players[index].exitFullscreen();
@@ -262,12 +301,33 @@ $(function () {
       players[index].requestFullscreen();
     }
   })
+
+  if (document.querySelector('.product-tabs__overviews .video-js')) {
+    let productPagePlayer = videojs(document.querySelector('.product-tabs__overviews .video-js'))
+    productPagePlayer.on('click', function () {
+      if (productPagePlayer.hasClass('vjs-paused')) {
+        productPagePlayer.play()
+      }
+      if (this.hasClass('vjs-playing')) {
+        productPagePlayer.pause()
+      }
+    })
+    productPagePlayer.on('dblclick', function () {
+      if (productPagePlayer.hasClass('vjs-fullscreen')) {
+        productPagePlayer.exitFullscreen();
+      }
+      else {
+        productPagePlayer.requestFullscreen();
+      }
+    })
+  }
   $('.vjs-control-bar').on('click', function (e) {
     e.stopPropagation()
   })
   $('.vjs-control-bar').on('dblclick', function (e) {
     e.stopPropagation()
   })
+
 
   $('.lang-btn').on('click', function () {
     $(this).hasClass('lang-ru') ?
@@ -282,7 +342,7 @@ $(function () {
   let headerCatalogScroll
   let headerTopMenu
   let mobilePrefix = ($(window).width() < 480) ? ('.header__nav.header__nav--mobile') : ('')
-  
+
   $('.catalog__btn--close').on('click', function () {
     $('.header__catalog-wrapper').removeClass('active')
     $('.header__catalog-wrapper').slideUp(200, function () {
@@ -385,6 +445,30 @@ $(function () {
     })
   })
 
+  let viewPoint
+  if ($(window).width() + scrollBarWidth > 768) {
+    viewPoint = 'f-'
+    $('.catalog .product__item').hover(//меняет картинку, цвет тот же
+      function () {
+        let strParts = BuildSrc($(this))
+        let hoveredSrc = strParts.hoveredSrc + 'f-' + strParts.colorPostfix + strParts.srcExtension
+        let hoveredSourceSrc = strParts.hoveredSourceSrc + 'f-' + strParts.colorPostfix + strParts.sourceSrcExtension
+        strParts.img.attr('src', hoveredSrc)
+        strParts.sourceTag.attr('srcset', hoveredSourceSrc)
+      },
+      function () {
+        let strParts = BuildSrc($(this))
+        let normalSrc = strParts.hoveredSrc + 's-' + strParts.colorPostfix + strParts.srcExtension
+        let normalSourceSrc = strParts.hoveredSourceSrc + 's-' + strParts.colorPostfix + strParts.sourceSrcExtension
+        strParts.img.attr('src', normalSrc)
+        strParts.sourceTag.attr('srcset', normalSourceSrc)
+      }
+    )
+  }
+  else{
+    viewPoint = 's-'
+  }
+
   $('.catalog__product-color').on('click', function () {//меняет цвет
     $(this).siblings().removeClass('active')
     $(this).addClass('active')
@@ -396,7 +480,7 @@ $(function () {
     let srcExtension = src.slice(indexOfDot)//getting extension
     src = src.slice(0, indexOfDot)
     let newSrc = src.slice(0, src.length - 5)
-    newSrc = newSrc + 'f-' + colorPostfix + srcExtension
+    newSrc = newSrc + viewPoint + colorPostfix + srcExtension
     img.attr('src', newSrc)
     sourceTag.attr('srcset', newSrc)
   })
@@ -433,34 +517,15 @@ $(function () {
     }
     return strParts
   }
-
-  $('.catalog .product__item').hover(//меняет картинку, цвет тот же
-    function () {
-      let strParts = BuildSrc($(this))
-      let hoveredSrc = strParts.hoveredSrc + 'f-' + strParts.colorPostfix + strParts.srcExtension
-      let hoveredSourceSrc = strParts.hoveredSourceSrc + 'f-' + strParts.colorPostfix + strParts.sourceSrcExtension
-      strParts.img.attr('src', hoveredSrc)
-      strParts.sourceTag.attr('srcset', hoveredSourceSrc)
-    },
-    function () {
-      let strParts = BuildSrc($(this))
-      let normalSrc = strParts.hoveredSrc + 's-' + strParts.colorPostfix + strParts.srcExtension
-      let normalSourceSrc = strParts.hoveredSourceSrc + 's-' + strParts.colorPostfix + strParts.sourceSrcExtension
-      strParts.img.attr('src', normalSrc)
-      strParts.sourceTag.attr('srcset', normalSourceSrc)
-    }
-  )
+  
 
   $('.aside-filter-item__heading').on('click', function () {
     $(this).parent().toggleClass('closed')
   })
 
-  $('.aside-filter__label-wrapper').mCustomScrollbar({
-    scrollInertia: 500,
-    // mouseWheel: {
-    //   preventDefault: true
-    // }
-  })
+  if ($(window).width() + scrollBarWidth > 375) {
+    $('.aside-filter__label-wrapper').mCustomScrollbar()
+  }
 
   var $range = $('.aside-filter-item__range-slider')
   var $inputFrom = $('.aside-filter-item__range-input--from');
@@ -530,23 +595,30 @@ $(function () {
     $(this).closest('.catalog__inner').removeClass('view-type--rows')
     $('.product__rating').rateYo('option', 'starWidth', '12px')
   })
+  let catalogStarWidth
+  if ($(window).width() + scrollBarWidth > 1080) {
+    catalogStarWidth = 20
+  }
+  else{
+    catalogStarWidth = 14
+  }
   $('.catalog__top-view-type--rows').on('click', function () {
     $('.catalog__top-view-type--tiles').removeClass('active')
     $(this).addClass('active')
     $(this).closest('.catalog__inner').addClass('view-type--rows')
-    $('.product__rating').rateYo('option', 'starWidth', '20px')
+    $('.product__rating').rateYo('option', 'starWidth', `${catalogStarWidth}px`)
   })
 
   if ($(window).width() + scrollBarWidth < 480) {
     $('.section__link').html('Все')
   }
 
-  $('.footer__item-title').on('click', function() {
+  $('.footer__item-title').on('click', function () {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active')
       $(this).next().slideUp(200)
     }
-    else{
+    else {
       $('.footer__item-title').removeClass('active')
       $(this).addClass('active')
       $('.footer__item-title').next().slideUp(200)
@@ -563,12 +635,12 @@ $(function () {
       backgroundColor: $($('.product-page__color-radio')[i]).css('backgroundColor')
     })
   }
-  
-  function ChangeProductColor() {
 
-  }
+  // function ChangeProductColor() {
 
-  $('input.product-page__color-radio').on('click', function() {
+  // }
+
+  $('input.product-page__color-radio').on('click', function () {
     let colorId = $(this).data('product-color')
     let img = $('.product-page__slider-image')
     let source = img.siblings('source')
@@ -590,6 +662,19 @@ $(function () {
     // newSourceSrc = baseSrc + colorId + sourceSrcExtension
     // img.attr('src', newSrc)
     // source.attr('srcset', newSourceSrc)
+  })
+
+  $('.catalog__top-form-open-filters-btn').on('click', function(e) {
+    e.preventDefault()
+    $('.catalog__aside-filters').addClass('is-active')
+    if ($(window).width() + scrollBarWidth < 376) {
+      $('body').addClass('body-delivery-overflow-off')
+    }
+  })
+  $('.catalog__aside-filter-close-btn').on('click', function(e) {
+    e.preventDefault()
+    $('.catalog__aside-filters').removeClass('is-active')
+    $('body').removeClass('body-delivery-overflow-off')
   })
 
 })
