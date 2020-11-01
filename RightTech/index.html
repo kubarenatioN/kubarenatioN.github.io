@@ -223,7 +223,7 @@
       </div>
     </div>
   </header>
-  
+
   <section class="advantages">
     <div class="container">
       <div class="advantages__inner">
@@ -361,9 +361,11 @@
           <span class="directions__more">подробнее</span>
         </a>
       </div>
-      <a class="directions__all-link btn" href="#">
-        все услуги
-      </a>
+      <div class="directions__all-wrapper">
+        <a class="directions__all-link btn" href="#">
+          все услуги
+        </a>
+      </div>
     </div>
   </section>
 
@@ -625,7 +627,7 @@
       </div>
     </div>
   </section>
-<!--
+
   <section class="triangle">
     <div class="container">
       <div class="triangle__wrapper">
@@ -934,15 +936,18 @@
 
   <section class="price">
     <div class="container">
-      <h2 class="price__title section-title">
-        Стоимость юридических услуг в Минске
-      </h2>
-      <p class="price__text">
-        Стоимость услуг формируется согласно тарифам, установленным в компании и в зависимости от времени, затраченного
-        юристом
-        на разрешение возникшей ситуации. Принцип прозрачности делает наши цены обоснованными и понятными для клиента.
-      </p>
-      <a class="price__rates-link btn" href="#">тарифы</a>
+      <div class="price__inner">
+        <h2 class="price__title section-title">
+          Стоимость юридических услуг в Минске
+        </h2>
+        <p class="price__text">
+          Стоимость услуг формируется согласно тарифам, установленным в компании и в зависимости от времени,
+          затраченного
+          юристом
+          на разрешение возникшей ситуации. Принцип прозрачности делает наши цены обоснованными и понятными для клиента.
+        </p>
+        <a class="price__rates-link btn" href="#">тарифы</a>
+      </div>
     </div>
   </section>
 
@@ -1006,102 +1011,114 @@
           </h6>
           <div class="footer__offices-wrapper">
             <div class="footer__offices-minsk">
-              <p class="footer__minsk-title">
+              <p class="footer__minsk-title active">
                 Контакты в Минске
               </p>
-              <div class="footer__minsk-phones-wrapper">
-                <a class="footer__minsk-phone" href="tel:375447550101">+375 (44) 755-01-01</a>
-                <a class="footer__minsk-phone" href="tel:375295500101">+375 (29) 550-01-01</a>
-                <a class="footer__minsk-phone" href="tel:375173744060">+375 (17) 374-40-60</a>
-              </div>
-              <div class="footer__minsk-address-wrapper">
-                <span class="footer__minsk-address-title">Адрес</span>
-                <p class="footer__minsk-address">
-                  г. Минск, ул. Широкая, д. 3, пом. 146, оф. 4
-                </p>
-              </div>
-              <div class="footer__minsk-russia-phone-wrapper">
-                <span class="footer__minsk-russia-phone-title">
-                  Телефон для связи резидентов Российской Федерации
-                </span>
-                <a class="footer__minsk-russia-phone" href="tel:79891662400">
-                  whatsapp +7 (989) 166 24 00
+              <div class="footer__minsk-wrapper active">
+                <div class="footer__minsk-phones-wrapper">
+                  <a class="footer__minsk-phone" href="tel:375447550101">+375 (44) 755-01-01</a>
+                  <a class="footer__minsk-phone" href="tel:375295500101">+375 (29) 550-01-01</a>
+                  <a class="footer__minsk-phone" href="tel:375173744060">+375 (17) 374-40-60</a>
+                </div>
+                <div class="footer__minsk-address-wrapper">
+                  <span class="footer__minsk-address-title">Адрес</span>
+                  <p class="footer__minsk-address">
+                    г. Минск, ул. Широкая, д. 3, пом. 146, оф. 4
+                  </p>
+                </div>
+                <div class="footer__minsk-russia-phone-wrapper">
+                  <span class="footer__minsk-russia-phone-title">
+                    Телефон для связи резидентов Российской Федерации
+                  </span>
+                  <a class="footer__minsk-russia-phone" href="tel:79891662400">
+                    whatsapp +7 (989) 166 24 00
+                  </a>
+                </div>
+                <a href="mailto:info@jurisprudent.by" class="footer__minsk-mail">
+                  info@jurisprudent.by
                 </a>
               </div>
-              <a href="mailto:info@jurisprudent.by" class="footer__minsk-mail">
-                info@jurisprudent.by
-              </a>
             </div>
             <div class="footer__offices-other">
               <div class="footer__office-box">
                 <p class="footer__office-title">
                   отдел в могилеве
                 </p>
-                <div class="footer__office-address-wrapper">
-                  <span class="footer__office-address-title">Адрес</span>
-                  <p class="footer__office-address">
-                    г. Могилев, ул. Космонавтов, д. 19, оф. 507
-                  </p>
+                <div class="footer__office-wrapper">
+                  <div class="footer__office-address-wrapper">
+                    <span class="footer__office-address-title">Адрес</span>
+                    <p class="footer__office-address">
+                      г. Могилев, ул. Космонавтов, д. 19, оф. 507
+                    </p>
+                  </div>
+                  <a href="mailto:mogilev@jurisprudent.by" class="footer__office-mail">
+                    mogilev@jurisprudent.by
+                  </a>
                 </div>
-                <a href="mailto:mogilev@jurisprudent.by" class="footer__office-mail">
-                  mogilev@jurisprudent.by
-                </a>
               </div>
               <div class="footer__office-box">
                 <p class="footer__office-title">
                   Отдел в Гродно
                 </p>
-                <div class="footer__office-address-wrapper">
-                  <span class="footer__office-address-title">Адрес</span>
-                  <p class="footer__office-address">
-                    г. Гродно, ул. Карла Маркса, д. 31-1, оф. 1010
-                  </p>
+                <div class="footer__office-wrapper">
+                  <div class="footer__office-address-wrapper">
+                    <span class="footer__office-address-title">Адрес</span>
+                    <p class="footer__office-address">
+                      г. Гродно, ул. Карла Маркса, д. 31-1, оф. 1010
+                    </p>
+                  </div>
+                  <a href="mailto:grodno@jurisprudent.by" class="footer__office-mail">
+                    grodno@jurisprudent.by
+                  </a>
                 </div>
-                <a href="mailto:grodno@jurisprudent.by" class="footer__office-mail">
-                  grodno@jurisprudent.by
-                </a>
               </div>
               <div class="footer__office-box">
                 <p class="footer__office-title">
                   Отдел в Бресте
                 </p>
-                <div class="footer__office-address-wrapper">
-                  <span class="footer__office-address-title">Адрес</span>
-                  <p class="footer__office-address">
-                    г. Брест, б-р Шевченко, д. 4, оф. 401
-                  </p>
+                <div class="footer__office-wrapper">
+                  <div class="footer__office-address-wrapper">
+                    <span class="footer__office-address-title">Адрес</span>
+                    <p class="footer__office-address">
+                      г. Брест, б-р Шевченко, д. 4, оф. 401
+                    </p>
+                  </div>
+                  <a href="mailto:brest@jurisprudent.by" class="footer__office-mail">
+                    brest@jurisprudent.by
+                  </a>
                 </div>
-                <a href="mailto:brest@jurisprudent.by" class="footer__office-mail">
-                  brest@jurisprudent.by
-                </a>
               </div>
               <div class="footer__office-box">
                 <p class="footer__office-title">
                   Отдел в Гомеле
                 </p>
-                <div class="footer__office-address-wrapper">
-                  <span class="footer__office-address-title">Адрес</span>
-                  <p class="footer__office-address">
-                    г. Гомель, пр. Ленина, д. 10, оф. 901
-                  </p>
+                <div class="footer__office-wrapper">
+                  <div class="footer__office-address-wrapper">
+                    <span class="footer__office-address-title">Адрес</span>
+                    <p class="footer__office-address">
+                      г. Гомель, пр. Ленина, д. 10, оф. 901
+                    </p>
+                  </div>
+                  <a href="mailto:gomel@jurisprudent.by" class="footer__office-mail">
+                    gomel@jurisprudent.by
+                  </a>
                 </div>
-                <a href="mailto:gomel@jurisprudent.by" class="footer__office-mail">
-                  gomel@jurisprudent.by
-                </a>
               </div>
               <div class="footer__office-box">
                 <p class="footer__office-title">
                   Отдел в Витебске
                 </p>
-                <div class="footer__office-address-wrapper">
-                  <span class="footer__office-address-title">Адрес</span>
-                  <p class="footer__office-address">
-                    г. Витебск, ул.Гоголя, д. 14, оф. 614
-                  </p>
+                <div class="footer__office-wrapper">
+                  <div class="footer__office-address-wrapper">
+                    <span class="footer__office-address-title">Адрес</span>
+                    <p class="footer__office-address">
+                      г. Витебск, ул.Гоголя, д. 14, оф. 614
+                    </p>
+                  </div>
+                  <a href="mailto:vitebsk@jurisprudent.by" class="footer__office-mail">
+                    vitebsk@jurisprudent.by
+                  </a>
                 </div>
-                <a href="mailto:vitebsk@jurisprudent.by" class="footer__office-mail">
-                  vitebsk@jurisprudent.by
-                </a>
               </div>
             </div>
           </div>
@@ -1154,7 +1171,7 @@
       </span>
     </div>
   </footer>
--->
+
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
