@@ -18,17 +18,16 @@ $(function () {
   })
 
   const reviewsSwiper = new Swiper('.reviews__slider-container', {
+    spaceBetween: 30,
     breakpoints: {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 0,
         slidesPerGroup: 1,
       },
       // when window width is >= 480px
       831: {
         slidesPerView: 2,
-        spaceBetween: 30,
         slidesPerGroup: 2,
       },
     },
