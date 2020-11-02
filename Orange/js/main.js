@@ -358,8 +358,16 @@ $(function () {
     })
   })
   $('.catalog__btn--open').on('click', function () {
-    headerTopMenu = $('.header__top').height()
-    headerCatalogScroll = $(window).scrollTop()
+    let headerTopMenu
+    let headerCatalogScroll
+    if (($(window).width() + scrollBarWidth > 480)) {
+      headerTopMenu = $('.header__top').height()
+      headerCatalogScroll = $(window).scrollTop()
+    }
+    else{
+      headerTopMenu = 0
+      headerCatalogScroll = 0
+    }
     $('.header__catalog-wrapper').css({
       'top': headerTopMenu - headerCatalogScroll + 'px',
       'right': scrollBarWidth + 'px',
@@ -375,12 +383,33 @@ $(function () {
     })
   })
 
-  $('.header__catalog-link').on('mouseenter', function () {
-    $('.header__catalog-link').removeClass('active')
-    $(this).addClass('active')
+  if (($(window).width() + scrollBarWidth > 910)){
+    $('.header__catalog-link').on('mouseenter', function () {
+      $('.header__catalog-link').removeClass('active')
+      $(this).addClass('active')
+      $('.header__subcategories-wrapper').removeClass('active')
+      $('#' + $(this).data('subcategories')).addClass('active')
+    })
+  }
+  else{
     $('.header__subcategories-wrapper').removeClass('active')
-    $('#' + $(this).data('subcategories')).addClass('active')
-  })
+    $('.header__catalog-link').on('click', function (e) {
+      e.preventDefault()
+      $('.header__catalog-link').removeClass('active')
+      $(this).addClass('active')
+      $('.header__subcategories-wrapper').removeClass('active')
+      $('#' + $(this).data('subcategories')).addClass('active')
+    })
+    $('.catalog__btn--close').on('click', function() {
+      $('.header__catalog-link').removeClass('active')
+      $('.header__subcategories-wrapper').removeClass('active')
+    })
+    $('.header__categories-close-btn').on('click', function() {
+      $('.header__catalog-link').removeClass('active')
+      $('.header__subcategories-wrapper').removeClass('active')
+    })
+  }
+  
 
   $('.header__search-input').focusout(function () {
     $(this).val('')
