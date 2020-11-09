@@ -278,12 +278,12 @@ $(function () {
     $(this).toggleClass('product__item-like--active')
   })
 
-  const videos = document.querySelectorAll('.swiper-slide .video-js')
-  const players = []
-  for (let i = 0; i < videos.length; i++) {
-    players[i] = videojs(videos[i])
+  const players = document.querySelectorAll('.swiper-slide .video-js')
+  // const players = []
+  for (let i = 0; i < players.length; i++) {
+    players[i] = videojs(players[i])
   }
-  $('.swiper-slide .video-js').on('touchend', function () {
+  $('.swiper-slide .video-js').on('click', function () {
     const index = $(this).closest('.swiper-slide').index()
     if ($(this).hasClass('vjs-paused')) {
       players[index].play()
