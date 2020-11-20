@@ -90,7 +90,7 @@ a{
   min-height: 60px;
 }
 .header-menu.scrolled .logo{
-  width: 40px;
+  width: 80px;
 }
 .header-menu .container{
   display: flex;
@@ -103,7 +103,7 @@ a{
   display: none;
 }
 .logo{
-  width: 60px;
+  width: 100px;
   transition: .2s;
 }
 .logo img{
