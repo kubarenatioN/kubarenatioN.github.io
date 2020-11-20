@@ -684,6 +684,9 @@ a{
   .section-title span{
     font-size: 28px;
   }
+  .header-title span{
+    font-size: 36px;
+  }
   .services-item{
     width: 33%;
   }
@@ -805,5 +808,8 @@ a{
 @media(max-width: 375px){
   .section-title span{
     font-size: 24px;
+  }
+  .header-title span{
+    font-size: 36px;
   }
 }
