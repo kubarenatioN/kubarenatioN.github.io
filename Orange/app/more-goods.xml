@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+  <PRODUCT>
+    <CATEGORY>Аппаратура</CATEGORY>
+    <NAME>Музыкальные колонки</NAME>
+    <RATING>3.9</RATING>
+    <PRICE>13 000</PRICE>
+    <IMGSRC>images/content/product-img-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Музыкальные инструменты</CATEGORY>
+    <NAME>Гитара акустическая из сосны</NAME>
+    <RATING>4.7</RATING>
+    <PRICE>15 500</PRICE>
+    <IMGSRC>images/content/product-img-2.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Рюкзаки и сумки</CATEGORY>
+    <NAME>Рюкзак Розетка ярко-кислотный из полиэстра</NAME>
+    <RATING>4.5</RATING>
+    <PRICE>7 800</PRICE>
+    <IMGSRC>images/content/product-img-3.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Рюкзаки и сумки</CATEGORY>
+    <NAME>Рюкзак Розетка ярко-кислотный из полиэстра</NAME>
+    <RATING>4.5</RATING>
+    <PRICE>7 800</PRICE>
+    <IMGSRC>images/content/product-img-5.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Рюкзаки и сумки</CATEGORY>
+    <NAME>Рюкзак Розетка ярко-кислотный из полиэстра</NAME>
+    <RATING>2.5</RATING>
+    <PRICE>7 800</PRICE>
+    <IMGSRC>images/content/product-img-6.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Рюкзаки и сумки</CATEGORY>
+    <NAME>Рюкзак Розетка ярко-кислотный из полиэстра</NAME>
+    <RATING>4.5</RATING>
+    <PRICE>7 800</PRICE>
+    <IMGSRC>images/content/product-img-3.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Рюкзаки и сумки</CATEGORY>
+    <NAME>Рюкзак Розетка ярко-кислотный из полиэстра</NAME>
+    <RATING>4.5</RATING>
+    <PRICE>7 800</PRICE>
+    <IMGSRC>images/content/product-img-4.webp</IMGSRC>
+  </PRODUCT>
+</CATALOG>

@@ -1,0 +1,84 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  overflow-x: hidden;
+  min-width: 320px;
+  color: $black;
+  font-family: 'roboto-r';
+  font-size: 14px;
+  line-height: 1.15;
+}
+.container{
+  max-width: 1600px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  font-weight: 400;
+}
+p{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img{
+  display: block;
+}
+button{
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-family: 'roboto-r';
+  font: unset;
+}
+input{
+  font-family: 'roboto-r';
+  font: unset;
+}
+.section{
+  margin-bottom: 100px;
+}
+.section__title{
+  font-family: 'roboto-m';
+  font-size: 30px;
+}
+.section__heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+.section__link{
+  padding-right: 15px;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 18px;
+    background-image: url(../images/next.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
