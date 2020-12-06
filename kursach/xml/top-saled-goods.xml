@@ -101,12 +101,12 @@
   </PRODUCT>
   <PRODUCT isNew="true">
     <CATEGORY>мобильные телефоны</CATEGORY>
-    <NAME>Смартфон Xiaomi Redmi 5 Pro</NAME>
+    <NAME>Смартфон Xiaomi Redmi Mi 10 Smart 2019</NAME>
     <RATING>4.6</RATING>
     <REVIEWS>17</REVIEWS>
-    <OLDPRICE>390</OLDPRICE>
-    <PRICE>330</PRICE>
-    <IMGSRC>images/content/product-img-smartphone-2.webp</IMGSRC>
+    <OLDPRICE>720</OLDPRICE>
+    <PRICE>690</PRICE>
+    <IMGSRC>images/content/product-img-smartphone-3.webp</IMGSRC>
   </PRODUCT>
   <PRODUCT isNew="true">
     <CATEGORY>Компьютеры и комплектующие</CATEGORY>
