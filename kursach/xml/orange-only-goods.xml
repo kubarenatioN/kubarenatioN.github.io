@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+  <PRODUCT>
+    <CATEGORY>Спальная комната</CATEGORY>
+    <NAME>Подушка синтетическая Soft для студентов</NAME>
+    <RATING>4.2</RATING>
+    <REVIEWS>7</REVIEWS>
+    <OLDPRICE>67</OLDPRICE>
+    <PRICE>53</PRICE>
+    <IMGSRC>images/content/product-img-pillow1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isSale="true">
+    <CATEGORY>Компьютеры и комплектующие</CATEGORY>
+    <NAME>Клавиатура Razor механическая игровая радужная подсветка</NAME>
+    <RATING>4.4</RATING>
+    <REVIEWS>8</REVIEWS>
+    <OLDPRICE>160</OLDPRICE>
+    <PRICE>129</PRICE>
+    <IMGSRC>images/content/product-img-keyboard-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isNew="true">
+    <CATEGORY>Бытовая техника</CATEGORY>
+    <NAME>Блендер BOSH кухонный ручной</NAME>
+    <RATING>4.5</RATING>
+    <REVIEWS>61</REVIEWS>
+    <OLDPRICE>210</OLDPRICE>
+    <PRICE>179</PRICE>
+    <IMGSRC>images/content/product-img-blender-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isSale="true">
+    <CATEGORY>Игры</CATEGORY>
+    <NAME>Игра The Last Of Us для консоли Sony Playstation 4</NAME>
+    <RATING>2.7</RATING>
+    <REVIEWS>25</REVIEWS>
+    <OLDPRICE>110</OLDPRICE>
+    <PRICE>89</PRICE>
+    <IMGSRC>images/content/product-img-disk-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Телевизоры</CATEGORY>
+    <NAME>Телевизор Samsung жидкокристаллический 16 млн. цветов</NAME>
+    <RATING>4.7</RATING>
+    <REVIEWS>6</REVIEWS>
+    <OLDPRICE>660</OLDPRICE>
+    <PRICE>570</PRICE>
+    <IMGSRC>images/content/product-img-tv-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isSale="true">
+    <CATEGORY>Музыкальные инструменты</CATEGORY>
+    <NAME>Гитара акустическая Hamaha сосна европейская нейлоновые струны</NAME>
+    <RATING>4.5</RATING>
+    <REVIEWS>12</REVIEWS>
+    <OLDPRICE>200</OLDPRICE>
+    <PRICE>170</PRICE>
+    <IMGSRC>images/content/product-img-guitar-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Рюкзаки и сумки</CATEGORY>
+    <NAME>Рюкзак Eastpak кислотный зеленый полиэстр</NAME>
+    <RATING>4.3</RATING>
+    <REVIEWS>5</REVIEWS>
+    <OLDPRICE>140</OLDPRICE>
+    <PRICE>130</PRICE>
+    <IMGSRC>images/content/product-img-backpack-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isSale="true">
+    <CATEGORY>Наушники и гарнитуры</CATEGORY>
+    <NAME>Наушники беспроводные Samsung A3 wireless earbubs</NAME>
+    <RATING>4.0</RATING>
+    <REVIEWS>8</REVIEWS>
+    <OLDPRICE>120</OLDPRICE>
+    <PRICE>116</PRICE>
+    <IMGSRC>images/content/product-img-earphones-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isNew="true">
+    <CATEGORY>Гигиена и уход</CATEGORY>
+    <NAME>Дезодорант мужской Adidas Championship 2017</NAME>
+    <RATING>4.2</RATING>
+    <REVIEWS>5</REVIEWS>
+    <OLDPRICE>30</OLDPRICE>
+    <PRICE>29</PRICE>
+    <IMGSRC>images/content/product-img-spray-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isNew="true">
+    <CATEGORY>Компьютеры и комплектующие</CATEGORY>
+    <NAME>Видеокарта Nvidia GeForce 1080Ti 16 GB бирюзовая подсветка</NAME>
+    <RATING>3.9</RATING>
+    <REVIEWS>16</REVIEWS>
+    <OLDPRICE>290</OLDPRICE>
+    <PRICE>269</PRICE>
+    <IMGSRC>images/content/product-img-videocard-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Аппаратура</CATEGORY>
+    <NAME>Колонки музыкальные Defender MD73 Ultra Deep</NAME>
+    <RATING>4.5</RATING>
+    <REVIEWS>18</REVIEWS>
+    <OLDPRICE>300</OLDPRICE>
+    <PRICE>260</PRICE>
+    <IMGSRC>images/content/product-img-loudspeakers-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isNew="true">
+    <CATEGORY>Часы и аксессуары</CATEGORY>
+    <NAME>Часы электронные Xiaomi E-Watches G</NAME>
+    <RATING>3.3</RATING>
+    <REVIEWS>3</REVIEWS>
+    <OLDPRICE>80</OLDPRICE>
+    <PRICE>74</PRICE>
+    <IMGSRC>images/content/product-img-watch-1.webp</IMGSRC>
+  </PRODUCT>
+</CATALOG>

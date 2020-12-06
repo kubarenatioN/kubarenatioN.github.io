@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+  <PRODUCT isSale="true">
+    <CATEGORY>Ноутбуки</CATEGORY>
+    <NAME>ASUS ZenBook 3 Pro core i7 8 GB ОЗУ стальной блеск</NAME>
+    <RATING>4.2</RATING>
+    <REVIEWS>46</REVIEWS>
+    <OLDPRICE>1 790</OLDPRICE>
+    <PRICE>1 430</PRICE>
+    <IMGSRC>images/content/product-img-notebook-2.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>мобильные телефоны</CATEGORY>
+    <NAME>Смартфон Xiaomi Mi 10 Smart 2019</NAME>
+    <RATING>4.2</RATING>
+    <REVIEWS>24</REVIEWS>
+    <OLDPRICE>800</OLDPRICE>
+    <PRICE>690</PRICE>
+    <IMGSRC>images/content/product-img-smartphone-3.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isNew="true">
+    <CATEGORY>Скейтборды</CATEGORY>
+    <NAME>Скейтборд Penny Orange Ice для детей пластик</NAME>
+    <RATING>4.3</RATING>
+    <REVIEWS>12</REVIEWS>
+    <OLDPRICE>75</OLDPRICE>
+    <PRICE>65</PRICE>
+    <IMGSRC>images/content/product-img-skate-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isNew="true">
+    <CATEGORY>мобильные телефоны</CATEGORY>
+    <NAME>Смартфон Xiaomi Redmi 5 Pro</NAME>
+    <RATING>4.6</RATING>
+    <REVIEWS>17</REVIEWS>
+    <OLDPRICE>390</OLDPRICE>
+    <PRICE>330</PRICE>
+    <IMGSRC>images/content/product-img-smartphone-2.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Часы и аксессуары</CATEGORY>
+    <NAME>Часы электронные Xiaomi E-Watches G</NAME>
+    <RATING>3.3</RATING>
+    <REVIEWS>3</REVIEWS>
+    <OLDPRICE>80</OLDPRICE>
+    <PRICE>74</PRICE>
+    <IMGSRC>images/content/product-img-watch-2.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isSale="true">
+    <CATEGORY>Ноутбуки</CATEGORY>
+    <NAME>Apple MacBook Air 13'' 2020 256GB (серый космос)</NAME>
+    <RATING>4.4</RATING>
+    <REVIEWS>27</REVIEWS>
+    <OLDPRICE>3 600</OLDPRICE>
+    <PRICE>3 390</PRICE>
+    <IMGSRC>images/content/product-img-macbook-2.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isNew="true">
+    <CATEGORY>Мячи</CATEGORY>
+    <NAME>Мяч футбольный Brazuca 2014 Професиональный</NAME>
+    <RATING>4.0</RATING>
+    <REVIEWS>32</REVIEWS>
+    <OLDPRICE>110</OLDPRICE>
+    <PRICE>90</PRICE>
+    <IMGSRC>images/content/product-img-ball-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT >
+    <CATEGORY>Кроссовки</CATEGORY>
+    <NAME>Кроссовки Nike Free Style полиуретановая подошва</NAME>
+    <RATING>3.7</RATING>
+    <REVIEWS>25</REVIEWS>
+    <OLDPRICE>170</OLDPRICE>
+    <PRICE>159</PRICE>
+    <IMGSRC>images/content/product-img-sneakers-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isNew="true">
+    <CATEGORY>Телевизоры</CATEGORY>
+    <NAME>Телевизор Samsung жидкокристаллический 16 млн. цветов</NAME>
+    <RATING>4.7</RATING>
+    <REVIEWS>6</REVIEWS>
+    <OLDPRICE>660</OLDPRICE>
+    <PRICE>570</PRICE>
+    <IMGSRC>images/content/product-img-tv-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isSale="true">
+    <CATEGORY>Музыкальные инструменты</CATEGORY>
+    <NAME>Гитара акустическая Hamaha сосна европейская нейлоновые струны</NAME>
+    <RATING>4.5</RATING>
+    <REVIEWS>12</REVIEWS>
+    <OLDPRICE>200</OLDPRICE>
+    <PRICE>170</PRICE>
+    <IMGSRC>images/content/product-img-guitar-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isNew="true">
+    <CATEGORY>Гигиена и уход</CATEGORY>
+    <NAME>Дезодорант мужской Adidas Championship 2017</NAME>
+    <RATING>4.2</RATING>
+    <REVIEWS>5</REVIEWS>
+    <OLDPRICE>30</OLDPRICE>
+    <PRICE>29</PRICE>
+    <IMGSRC>images/content/product-img-spray-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Компьютеры и комплектующие</CATEGORY>
+    <NAME>Видеокарта Nvidia GeForce 1080Ti 16 GB бирюзовая подсветка</NAME>
+    <RATING>3.9</RATING>
+    <REVIEWS>16</REVIEWS>
+    <OLDPRICE>290</OLDPRICE>
+    <PRICE>269</PRICE>
+    <IMGSRC>images/content/product-img-videocard-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT isSale="true">
+    <CATEGORY>Аппаратура</CATEGORY>
+    <NAME>Колонки музыкальные Defender MD73 Ultra Deep</NAME>
+    <RATING>4.5</RATING>
+    <REVIEWS>18</REVIEWS>
+    <OLDPRICE>300</OLDPRICE>
+    <PRICE>260</PRICE>
+    <IMGSRC>images/content/product-img-loudspeakers-1.webp</IMGSRC>
+  </PRODUCT>
+  <PRODUCT>
+    <CATEGORY>Питомцы</CATEGORY>
+    <NAME>Корм Whiskas для кошек 2 года с говядиной</NAME>
+    <RATING>4.9</RATING>
+    <REVIEWS>5</REVIEWS>
+    <OLDPRICE>29</OLDPRICE>
+    <PRICE>25</PRICE>
+    <IMGSRC>images/content/product-img-pet-food-1.webp</IMGSRC>
+  </PRODUCT>
+</CATALOG>
