@@ -5787,6 +5787,7 @@ yx-axis
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -10784,9 +10785,11 @@ input {
   }
   .product-tabs__addition,
   .top-trade__wrapper {
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
+    -ms-grid-columns: 48% 48%;
+    grid-template-columns: 48% 48%;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
   }
   .product__item.product__item-medium {
     padding: 20px 10px;

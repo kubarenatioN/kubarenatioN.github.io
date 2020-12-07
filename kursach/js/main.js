@@ -186,9 +186,9 @@ $(function () {
     spacing: '2px',
   })
 
-  // $('.product__item-like').on('click', function () {
-  //   $(this).toggleClass('product__item-like--active')
-  // })
+  $('.product__item-like').on('click', function () {
+    $(this).toggleClass('product__item-like--active')
+  })
 
   const players = document.querySelectorAll('.swiper-slide .video-js')
   // const players = []

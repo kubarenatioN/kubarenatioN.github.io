@@ -196,11 +196,6 @@ $(function () {
   })
 
 
-  // $('.product__item-like').on('click', function () {
-  //   $(this).toggleClass('product__item-like--active')
-  // })
-
-
   // console.log('xmlLoad script end');
 
 })

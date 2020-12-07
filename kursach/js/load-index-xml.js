@@ -388,7 +388,7 @@ $(function () {
     loadTopSaledGoods('top-saled-goods', 'top-saled-goods'),
   ]).then(() => {
     console.log('all promises ended');
-    $('.product__item-like').on('click', function () {
+    $('.product__item .product__item-like').on('click', function () {
       $(this).toggleClass('product__item-like--active')
     })
   })
