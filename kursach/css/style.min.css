@@ -1,4 +1,20 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'roboto-r';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: 'roboto-m';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Roboto-Medium"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.eot") format("embedded-opentype");
+}
+
 /**
  * Swiper 6.1.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -5768,22 +5784,6 @@ yx-axis
 }
 
 /* ---------------------------------------- */
-@font-face {
-  font-family: 'roboto-r';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.eot") format("embedded-opentype");
-}
-
-@font-face {
-  font-family: 'roboto-m';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local("Roboto-Medium"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.eot") format("embedded-opentype");
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
