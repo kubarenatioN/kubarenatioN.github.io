@@ -190,55 +190,55 @@ $(function () {
     $(this).toggleClass('product__item-like--active')
   })
 
-  const players = document.querySelectorAll('.swiper-slide .video-js')
-  // const players = []
-  for (let i = 0; i < players.length; i++) {
-    players[i] = videojs(players[i])
-  }
-  $('.swiper-slide .video-js').on('click', function () {
-    const index = $(this).closest('.swiper-slide').index()
-    if ($(this).hasClass('vjs-paused')) {
-      players[index].play()
-    }
-    if ($(this).hasClass('vjs-playing')) {
-      players[index].pause()
-    }
-  })
-  $('.swiper-slide .video-js').on('dblclick', function () {
-    const index = $(this).closest('.swiper-slide').index()
-    if ($(this).hasClass('vjs-fullscreen')) {
-      players[index].exitFullscreen();
-    }
-    else {
-      players[index].requestFullscreen();
-    }
-  })
+  // const players = document.querySelectorAll('.swiper-slide .video-js')
+  // // const players = []
+  // for (let i = 0; i < players.length; i++) {
+  //   players[i] = videojs(players[i])
+  // }
+  // $('.swiper-slide .video-js').on('click', function () {
+  //   const index = $(this).closest('.swiper-slide').index()
+  //   if ($(this).hasClass('vjs-paused')) {
+  //     players[index].play()
+  //   }
+  //   if ($(this).hasClass('vjs-playing')) {
+  //     players[index].pause()
+  //   }
+  // })
+  // $('.swiper-slide .video-js').on('dblclick', function () {
+  //   const index = $(this).closest('.swiper-slide').index()
+  //   if ($(this).hasClass('vjs-fullscreen')) {
+  //     players[index].exitFullscreen();
+  //   }
+  //   else {
+  //     players[index].requestFullscreen();
+  //   }
+  // })
 
-  if (document.querySelector('.product-tabs__overviews .video-js')) {
-    let productPagePlayer = videojs(document.querySelector('.product-tabs__overviews .video-js'))
-    productPagePlayer.on('click', function () {
-      if (productPagePlayer.hasClass('vjs-paused')) {
-        productPagePlayer.play()
-      }
-      if (this.hasClass('vjs-playing')) {
-        productPagePlayer.pause()
-      }
-    })
-    productPagePlayer.on('dblclick', function () {
-      if (productPagePlayer.hasClass('vjs-fullscreen')) {
-        productPagePlayer.exitFullscreen();
-      }
-      else {
-        productPagePlayer.requestFullscreen();
-      }
-    })
-  }
-  $('.vjs-control-bar').on('click', function (e) {
-    e.stopPropagation()
-  })
-  $('.vjs-control-bar').on('dblclick', function (e) {
-    e.stopPropagation()
-  })
+  // if (document.querySelector('.product-tabs__overviews .video-js')) {
+  //   let productPagePlayer = videojs(document.querySelector('.product-tabs__overviews .video-js'))
+  //   productPagePlayer.on('click', function () {
+  //     if (productPagePlayer.hasClass('vjs-paused')) {
+  //       productPagePlayer.play()
+  //     }
+  //     if (this.hasClass('vjs-playing')) {
+  //       productPagePlayer.pause()
+  //     }
+  //   })
+  //   productPagePlayer.on('dblclick', function () {
+  //     if (productPagePlayer.hasClass('vjs-fullscreen')) {
+  //       productPagePlayer.exitFullscreen();
+  //     }
+  //     else {
+  //       productPagePlayer.requestFullscreen();
+  //     }
+  //   })
+  // }
+  // $('.vjs-control-bar').on('click', function (e) {
+  //   e.stopPropagation()
+  // })
+  // $('.vjs-control-bar').on('dblclick', function (e) {
+  //   e.stopPropagation()
+  // })
 
 
   $('.lang-btn').on('click', function () {
